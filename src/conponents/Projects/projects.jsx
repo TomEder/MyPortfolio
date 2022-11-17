@@ -33,9 +33,22 @@ const Projects = () => {
                 </a>
               </div>
               <p class="mt-2 text-slate-500">
-                Made a website for mine and my friends Overwatch team. The
-                Website is built with React and Tailwind CSS
+                Made a website for mine and my friends Overwatch team.
               </p>
+              <div className="md:flex md:w-full w-52 m-auto">
+                <p className="bg-gray-500 text-tommy-text p-1 rounded m-1">
+                  JavaScript ES6
+                </p>
+                <p className="bg-gray-500 text-tommy-text p-1 rounded m-1">
+                  CSS3
+                </p>
+                <p className="bg-gray-500 text-tommy-text p-1 rounded m-1">
+                  React
+                </p>
+                <p className="bg-gray-500 text-tommy-text p-1 rounded m-1">
+                  Tailwind CSS
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -58,6 +71,14 @@ const Projects = () => {
                 Redesigned this website for a client using Wordpress and
                 Elementor
               </p>
+              <div className="md:flex md:w-full w-52 m-auto">
+                <p className="bg-gray-500 text-tommy-text p-1 rounded m-1">
+                  Wordpress
+                </p>
+                <p className="bg-gray-500 text-tommy-text p-1 rounded m-1">
+                  Elementor
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -84,6 +105,20 @@ const Projects = () => {
                 A movie list app made with React. Uses TMDB-api to search movies
                 and TV-shows.
               </p>
+              <div className="md:flex md:w-full w-52 m-auto">
+                <p className="bg-gray-500 text-tommy-text p-1 rounded m-1">
+                  JavaScript ES6
+                </p>
+                <p className="bg-gray-500 text-tommy-text p-1 rounded m-1">
+                  CSS3
+                </p>
+                <p className="bg-gray-500 text-tommy-text p-1 rounded m-1">
+                  React
+                </p>
+                <p className="bg-gray-500 text-tommy-text p-1 rounded m-1">
+                  Redux
+                </p>
+              </div>
             </div>
           </div>
         </div>

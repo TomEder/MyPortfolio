@@ -3,6 +3,7 @@ import Header from "./conponents/Header/header";
 import Container from "./conponents/Container/container";
 import Projects from "./conponents/Projects/projects";
 import Footer from "./conponents/Footer/footer";
+import Skills from "./conponents/Skills/skills";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <Header />
       <Container />
       <Projects />
+      <Skills />
       <Footer />
     </div>
   );
