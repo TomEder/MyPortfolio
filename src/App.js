@@ -1,14 +1,16 @@
 import "./App.css";
 import Header from "./conponents/Header/header";
 import Container from "./conponents/Container/container";
+import Projects from "./conponents/Projects/projects";
+import Footer from "./conponents/Footer/footer";
 
 export default function App() {
   return (
-    <>
+    <div className="w-screen">
       <Header />
-      <div className="grid grid-cols-1 bg-slate-500 place-content-center">
-        <Container />
-      </div>
-    </>
+      <Container />
+      <Projects />
+      <Footer />
+    </div>
   );
 }
