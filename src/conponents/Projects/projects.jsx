@@ -19,6 +19,7 @@ const Projects = () => {
               <img
                 class="h-48 w-full object-cover md:h-full md:w-48"
                 src={CoolWolvesImg}
+                alt="coolwolves"
               />
             </div>
             <div class="p-8">
@@ -44,6 +45,7 @@ const Projects = () => {
               <img
                 class="h-48 w-full object-cover md:h-full md:w-48"
                 src={BioZoneImg}
+                alt="Biozone"
               />
             </div>
             <div class="p-8">
@@ -65,6 +67,7 @@ const Projects = () => {
               <img
                 class="h-48 w-full object-cover md:h-full md:w-48"
                 src={MoviesImg}
+                alt="MyMovies"
               />
             </div>
             <div class="p-8">

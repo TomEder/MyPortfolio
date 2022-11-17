@@ -18,7 +18,7 @@ const Container = () => {
           <img
             className="bg-transparent object-left-bottom"
             src={jagimg}
-            alt=""
+            alt="Image of me"
           />
         </div>
       </div>
