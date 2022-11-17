@@ -24,6 +24,7 @@ const Projects = () => {
             <div class="p-8">
               <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
                 <a
+                  rel="noreferrer"
                   target="_blank"
                   href="https://github.com/TomEder/E-sports-team/tree/master"
                 >
@@ -47,7 +48,7 @@ const Projects = () => {
             </div>
             <div class="p-8">
               <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
-                <a target="_blank" href="https://biozone.se/">
+                <a rel="noreferrer" target="_blank" href="https://biozone.se/">
                   BioZone.se
                 </a>
               </div>
@@ -68,7 +69,11 @@ const Projects = () => {
             </div>
             <div class="p-8">
               <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
-                <a target="_blank" href="https://github.com/TomEder/MyMovies">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://github.com/TomEder/MyMovies"
+                >
                   My-Movies
                 </a>
               </div>
