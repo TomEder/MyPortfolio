@@ -11,9 +11,11 @@ const MoviesImg = MyMovies;
 const Projects = () => {
   return (
     <div className="bg-tommy-background m-auto text-center p-10">
-      <h2 className="text-4xl my-5 text-tommy-text">MY PROJECTS</h2>
+      <h2 className="text-4xl my-5 overflow-y-hidden text-tommy-text">
+        MY PROJECTS
+      </h2>
       <div className="">
-        <div class="max-w-md mx-auto bg-white m-2 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="max-w-md mx-auto bg-slate-200 m-2 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
           <div class="md:flex h-full">
             <div class="md:shrink-0">
               <img
@@ -52,7 +54,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div class="max-w-md mx-auto bg-white m-2 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="max-w-md mx-auto bg-slate-200 m-2 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
           <div class="md:flex h-full">
             <div class="md:shrink-0">
               <img
@@ -82,7 +84,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div class="max-w-md mx-auto bg-white m-2 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="max-w-md mx-auto bg-slate-200 m-2 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
           <div class="md:flex h-full">
             <div class="md:shrink-0">
               <img

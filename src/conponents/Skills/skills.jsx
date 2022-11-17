@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <div className="p-auto bg-gray-400">
       <div className="m-auto h-fit mt-2 w-fit">
-        <h2 className="text-4xl text-tommy-text">SKILLS</h2>
+        <h2 className="text-4xl overflow-y-hidden text-tommy-text">SKILLS</h2>
       </div>
       <div className="flex justify-between mb-10 w-80 m-auto mt-20 md:w-96 md:m-auto md:mb-10 md:mt-10">
         <div>
