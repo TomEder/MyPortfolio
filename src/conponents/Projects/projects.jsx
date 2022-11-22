@@ -15,7 +15,7 @@ const Projects = () => {
         MY PROJECTS
       </h2>
       <div className="">
-        <div class="max-w-md mx-auto bg-slate-200 m-2 rounded-md shadow-md overflow-hidden md:max-w-2xl">
+        <div class="max-w-md mx-auto bg-gray-700 border border-solid border-white m-2 rounded-md shadow-md overflow-hidden md:max-w-2xl">
           <div class="md:flex h-full">
             <div class="md:shrink-0">
               <img
@@ -30,31 +30,32 @@ const Projects = () => {
                   rel="noreferrer"
                   target="_blank"
                   href="https://github.com/TomEder/E-sports-team/tree/master"
+                  className="text-slate-300"
                 >
                   E-sports team website
                 </a>
               </div>
-              <p class="mt-2 text-slate-500">
+              <p class="mt-2 text-slate-300">
                 Made a website for mine and my friends Overwatch team.
               </p>
               <div className="md:flex md:w-full w-52 m-auto">
-                <p className="bg-gray-500 text-tommy-text p-1 rounded m-1">
+                <p className="bg-gray-500 text-slate-300 p-1 rounded m-1">
                   JavaScript ES6
                 </p>
-                <p className="bg-gray-500 text-tommy-text p-1 rounded m-1">
+                <p className="bg-gray-500 text-slate-300 p-1 rounded m-1">
                   CSS3
                 </p>
-                <p className="bg-gray-500 text-tommy-text p-1 rounded m-1">
+                <p className="bg-gray-500 text-slate-300 p-1 rounded m-1">
                   React
                 </p>
-                <p className="bg-gray-500 text-tommy-text p-1 rounded m-1">
+                <p className="bg-gray-500 text-slate-300 p-1 rounded m-1">
                   Tailwind CSS
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="max-w-md mx-auto bg-slate-200 m-2 rounded-md shadow-md overflow-hidden md:max-w-2xl">
+        <div class="max-w-md mx-auto bg-gray-700 border border-solid border-white m-2 rounded-md shadow-md overflow-hidden md:max-w-2xl">
           <div class="md:flex h-full">
             <div class="md:shrink-0">
               <img
@@ -65,26 +66,31 @@ const Projects = () => {
             </div>
             <div class="p-8">
               <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
-                <a rel="noreferrer" target="_blank" href="https://biozone.se/">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://biozone.se/"
+                  className="text-slate-300"
+                >
                   BioZone.se
                 </a>
               </div>
-              <p class="mt-2 text-slate-500">
+              <p class="mt-2 text-slate-300">
                 Redesigned this website for a client using Wordpress and
                 Elementor
               </p>
               <div className="md:flex md:w-full w-52 m-auto">
-                <p className="bg-gray-500 text-tommy-text p-1 rounded m-1">
+                <p className="bg-gray-500 text-slate-300 p-1 rounded m-1">
                   Wordpress
                 </p>
-                <p className="bg-gray-500 text-tommy-text p-1 rounded m-1">
+                <p className="bg-gray-500 text-slate-300 p-1 rounded m-1">
                   Elementor
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="max-w-md mx-auto bg-slate-200 m-2 rounded-md shadow-md overflow-hidden md:max-w-2xl">
+        <div class="max-w-md mx-auto bg-gray-700 border border-solid border-white m-2 rounded-md shadow-md overflow-hidden md:max-w-2xl">
           <div class="md:flex h-full">
             <div class="md:shrink-0">
               <img
@@ -99,19 +105,20 @@ const Projects = () => {
                   rel="noreferrer"
                   target="_blank"
                   href="https://github.com/TomEder/MyMovies"
+                  className="text-slate-300"
                 >
                   My-Movies
                 </a>
               </div>
-              <p class="mt-2 text-slate-500">
-                A movie list app made with React. Uses TMDB-api to search movies
+              <p class="mt-2 text-slate-300">
+                A movie list app made with React. Uses TMDB-API to search movies
                 and TV-shows.
               </p>
               <div className="md:flex md:w-full w-52 m-auto">
-                <p className="bg-gray-500 text-tommy-text p-1 rounded m-1">
+                <p className="bg-gray-500 text-slate-300 p-1 rounded m-1">
                   JavaScript ES6
                 </p>
-                <p className="bg-gray-500 text-tommy-text p-1 rounded m-1">
+                <p className="bg-gray-500 text-slate-300 p-1 rounded m-1">
                   CSS3
                 </p>
                 <p className="bg-gray-500 text-tommy-text p-1 rounded m-1">

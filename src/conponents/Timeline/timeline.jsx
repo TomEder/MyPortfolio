@@ -17,8 +17,8 @@ const Timeline = () => {
       <div className="grid grid-cols-1 max-w-xl mx-auto">
         <div className=" p-4 rounded-md shadow-xl bg-gray-700 border border-solid border-white">
           <p className="text-gray-300">Okt 2022 - Current</p>
-          <h2 className="text-slate-300 text-lg">
-            <b>Great-IT</b>, Stockholm - Frontend-konsult
+          <h2 className="text-slate-300 text-lg mb-2">
+            <b>Great-IT</b>, Stockholm - Frontend-consultant
           </h2>
           <p className="text-sm text-slate-300">
             Hired to be a consultant for customers to help build websites and
@@ -35,7 +35,7 @@ const Timeline = () => {
       <div className="grid grid-cols-1 max-w-xl mx-auto">
         <div className=" p-4 rounded-md shadow-xl bg-gray-700 border border-solid border-white">
           <p className="text-gray-300">June 2022 - Oct 2022</p>
-          <h2 className="text-slate-300 tezt-lg">
+          <h2 className="text-slate-300 tezt-lg mb-2">
             <b>Blackpill innovative developments AB</b>
           </h2>
           <p className="text-sm text-slate-300">
@@ -51,7 +51,7 @@ const Timeline = () => {
 
       <div className="grid grid-cols-1 max-w-xl mx-auto">
         <div className=" p-4 rounded-md shadow-xl bg-gray-700 border border-solid border-white">
-          <h2 className="text-slate-300 text-lg">
+          <h2 className="text-slate-300 text-lg mb-2">
             <b>Tele2</b>, Stockholm - Intern, frontend
           </h2>
           <p className="text-sm text-slate-300">
@@ -68,7 +68,7 @@ const Timeline = () => {
 
       <div className="grid grid-cols-1 max-w-xl mx-auto mb-10">
         <div className=" p-4 rounded-md shadow-xl bg-gray-700 border border-solid border-white">
-          <h2 className="text-slate-300 text-lg">
+          <h2 className="text-slate-300 text-lg mb-2">
             <b>KYH</b>, Stockholm - Frontend development
           </h2>
           <p className="text-sm text-slate-300">
