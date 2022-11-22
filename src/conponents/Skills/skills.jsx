@@ -22,6 +22,8 @@ const Skills = () => {
           <p className="text-xl">Slack</p>
           <p className="text-xl">Github</p>
           <p className="text-xl">Git</p>
+          <p className="text-xl">UX</p>
+          <p className="text-xl">UI</p>
         </div>
       </div>
     </div>

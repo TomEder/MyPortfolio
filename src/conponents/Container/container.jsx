@@ -14,6 +14,11 @@ const Container = () => {
         <p className=" bg-transparent my-20 from-gray-500 text-4xl text-center text-tommy-text mt-8">
           {"<Frontend Developer/>"}
         </p>
+        <h2 className="text-2xl my-5 text-center overflow-y-hidden text-tommy-text">
+          My name is Tom Ederstål and i'm a Software Developer that loves
+          Technology..
+          <br /> Currently working at Great-IT.
+        </h2>
         <div className="items-center bg-transparent w-60">
           <img
             className="bg-transparent object-left-bottom"

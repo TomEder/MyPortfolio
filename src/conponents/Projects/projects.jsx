@@ -15,7 +15,7 @@ const Projects = () => {
         MY PROJECTS
       </h2>
       <div className="">
-        <div class="max-w-md mx-auto bg-slate-200 m-2 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="max-w-md mx-auto bg-slate-200 m-2 rounded-md shadow-md overflow-hidden md:max-w-2xl">
           <div class="md:flex h-full">
             <div class="md:shrink-0">
               <img
@@ -54,7 +54,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div class="max-w-md mx-auto bg-slate-200 m-2 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="max-w-md mx-auto bg-slate-200 m-2 rounded-md shadow-md overflow-hidden md:max-w-2xl">
           <div class="md:flex h-full">
             <div class="md:shrink-0">
               <img
@@ -84,7 +84,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div class="max-w-md mx-auto bg-slate-200 m-2 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="max-w-md mx-auto bg-slate-200 m-2 rounded-md shadow-md overflow-hidden md:max-w-2xl">
           <div class="md:flex h-full">
             <div class="md:shrink-0">
               <img

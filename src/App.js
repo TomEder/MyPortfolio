@@ -4,6 +4,7 @@ import Container from "./conponents/Container/container";
 import Projects from "./conponents/Projects/projects";
 import Footer from "./conponents/Footer/footer";
 import Skills from "./conponents/Skills/skills";
+import Timeline from "./conponents/Timeline/timeline";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Header />
       <Container />
       <Projects />
+      <Timeline />
       <Skills />
       <Footer />
     </div>

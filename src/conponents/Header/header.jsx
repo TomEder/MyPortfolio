@@ -10,14 +10,14 @@ const Header = () => {
     <>
       <div className="mx-auto bg-tommy-background px-3 md:py-3">
         <div className="flex md:flex-row justify-between items-center">
-          <div className="flex mt-5 space-x-8 md-block">
+          <div className="flex mt-5 space-x-4 md-block">
             <a
               rel="noreferrer"
               target="_blank"
               href="https://www.linkedin.com/in/tom-ederst%C3%A5l-5b3b99101/"
               className="text-base text-gray-500"
             >
-              <img src={LiImg} alt="LinkedIn" />
+              <img className="scale-75" src={LiImg} alt="LinkedIn" />
             </a>
             <a
               rel="noreferrer"
@@ -25,7 +25,7 @@ const Header = () => {
               href="https://github.com/TomEder"
               className="text-base text-gray-500"
             >
-              <img src={GHImg} alt="Github" />
+              <img className="scale-75" src={GHImg} alt="Github" />
             </a>
           </div>
         </div>
