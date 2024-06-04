@@ -9,7 +9,7 @@ const Container = () => {
     <>
       <div className="bg-gradient-to-t w-screen from-gray-500 to-tommy-background pt-10">
         <h1 className=" bg-transparent from-gray-500 text-6xl text-center text-tommy-text">
-          TOM EDERSTÅL
+          ETHER NORDIC
         </h1>
         <p className=" bg-transparent my-20 from-gray-500 text-4xl text-center text-tommy-text mt-8">
           {"<Frontend Developer/>"}
