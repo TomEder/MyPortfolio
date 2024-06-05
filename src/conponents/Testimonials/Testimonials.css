@@ -1,0 +1,33 @@
+/* Custom scrollbar styles */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #4A5568; /* thumb color */
+    border-radius: 4px; /* rounded corners */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background-color: #2D3748; /* track color */
+}
+
+.custom-dots .slick-dots {
+    bottom: 20px; /* Adjust this value as needed to position the dots inside the cards */
+    z-index: 10; /* Ensure the dots are above the content */
+    position: absolute;
+    width: 100%;
+}
+
+.custom-dots .slick-dots li button:before {
+    font-size: 12px; /* Adjust the size of the dots */
+    color: gray; /* Dot color */
+}
+
+.custom-dots .slick-dots li.slick-active button:before {
+    color: blue; /* Active dot color */
+}
+
+.slick-slide {
+    position: relative;
+}

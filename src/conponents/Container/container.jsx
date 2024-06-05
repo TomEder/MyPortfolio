@@ -1,5 +1,4 @@
 import React from "react";
-
 import Jag from "../../Images/Jag4.png";
 
 const jagimg = Jag;
@@ -7,23 +6,26 @@ const jagimg = Jag;
 const Container = () => {
   return (
     <>
-      <div className="bg-gradient-to-t w-screen from-gray-500 to-tommy-background pt-10">
-        <h1 className=" bg-transparent from-gray-500 text-6xl text-center text-tommy-text">
-          ETHER NORDIC
-        </h1>
-        <p className=" bg-transparent my-20 from-gray-500 text-4xl text-center text-tommy-text mt-8">
-          {"<Frontend Developer/>"}
-        </p>
-        <h2 className="text-2xl my-5 text-center overflow-y-hidden text-tommy-text">
-          My name is Tom Ederstål and i'm a Software Developer that loves
-          Technology..
-          <br /> Currently working at Great-IT.
-        </h2>
-        <div className="items-center bg-transparent w-60">
+      <div className="bg-gradient-to-t w-screen h-screen from-tommy-lower-bg to-tommy-background pt-10 flex flex-col md:flex-row items-center justify-between px-10 border-b-4">
+        <div className="text-center md:text-left md:w-1/2">
+          <h1 className="bg-transparent text-6xl text-tommy-text overflow-hidden">
+            Tom Ederstål
+          </h1>
+          <p className="bg-transparent text-4xl text-tommy-text mt-4 overflow-hidden">
+            Freelance web developer
+          </p>
+          <h2 className="text-2xl my-5 text-tommy-text overflow-y-hidden">
+          I am a seasoned frontend developer with extensive experience in development and problem-solving. I possess an ambitious approach, complemented by a two-year specialized KYH diploma in frontend development and expertise in UX/UI design. My robust technical proficiency and interpersonal skills have made me well-liked by both colleagues and supervisors. As a team player, I also demonstrate the initiative and drive necessary for continuous personal and professional growth.
+          </h2>
+          <button className="mt-5 bg-button-color hover:bg-button-hover text-white py-2 px-4 rounded shadow-sm">
+            Contact me!
+          </button>
+        </div>
+        <div className="md:w-1/2 flex justify-center md:justify-end mt-10 md:mt-0 rounded-full">
           <img
-            className="bg-transparent object-left-bottom"
+            className="bg-transparent rounded-full shadow-2xl w-60 h-60"
             src={jagimg}
-            alt="Me"
+            alt="Tom Ederstål"
           />
         </div>
       </div>
