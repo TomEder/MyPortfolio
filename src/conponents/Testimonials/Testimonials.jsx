@@ -5,11 +5,10 @@ import 'slick-carousel/slick/slick-theme.css';
 import './Testimonials.css'; // Add this for custom styles
 
 const testimonials = [
-    { name: "Nabil Benali", role: "Fullstack Developer", quote: "Tom is an awesome dude with big brain developer skills. Hire him!" },
-    { name: "Victor Lind", role: "Multimedia Producer", quote: "Tom is an awesome booba with big brain developer skills. Booba him!" },
-    { name: "Hrodvar Johansson", role: "Development Manager", quote: "Tom is a dude" },
-    { name: "Danne Persson", role: "Manager", quote: "I fired him!" },
-    { name: "Tommy", role: "Fullstack Developer", quote: "I am the best! Tom is an awesome booba with big brain developer skills. Booba him! I am the best! Tom is an awesome booba with big brain developer skills. Booba him! I am the best! Tom is an awesome booba with big brain developer skills. Booba him!" },
+    { name: "TBA", role: "Fullstack Developer", quote: "Quote coming later." },
+    { name: "TBA", role: "Multimedia Producer", quote: "Quote coming later." },
+    { name: "TBA", role: "Development Manager", quote: "Quote coming later." },
+    { name: "TBA", role: "Manager", quote: "Quote coming later." },
 ];
 
 const Testimonials = () => {
