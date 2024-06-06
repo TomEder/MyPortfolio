@@ -12,12 +12,24 @@ export default function App() {
   return (
     <div className="w-screen overflow-hidden">
       <Header />
-      <Landing />
-      <Container />
-      <Projects />
-      <Services />
-      <Testimonials />
-      <Contact />
+      <div id="landing">
+        <Landing />
+      </div>
+      <div id="container">
+        <Container />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="services">
+        <Services />
+      </div>
+      <div id="testimonials">
+        <Testimonials />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
       <Footer />
     </div>
   );
