@@ -4,10 +4,6 @@ import { ReactComponent as Logo } from "../../Images/ETHER _ NORDIC_bright.svg";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-white transition ease transform duration-300`;
 
   return (
