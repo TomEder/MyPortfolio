@@ -1,0 +1,42 @@
+/* header.css */
+svg path {
+    stroke: #ffffff;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 24 var(--total-length, 100);
+    stroke-dashoffset: var(--offset, -38);
+    transition: stroke-dashoffset 0.8s cubic-bezier(.645, .045, .355, 1), stroke-dasharray 0.8s cubic-bezier(.645, .045, .355, 1), transform 0.8s cubic-bezier(.645, .045, .355, 1);
+  }
+  
+  svg path.line--1 {
+    --total-length: 111.22813415527344;
+    --offset: -50.22813415527344;
+  }
+  
+  svg path.line--2 {
+    --total-length: 99;
+    --offset: -20;
+  }
+  
+  svg path.line--3 {
+    --total-length: 111.22813415527344;
+    --offset: -50.22813415527344;
+  }
+  
+  .burger-line-open.line--1 {
+    --offset: -16.9705627485;
+  }
+  
+  .burger-line-open.line--2 {
+    --offset: -20;
+  }
+  
+  .burger-line-open.line--3 {
+    --offset: -16.9705627485;
+  }
+  
+  svg circle {
+    transition: opacity 0.8s cubic-bezier(.645, .045, .355, 1);
+  }
+  

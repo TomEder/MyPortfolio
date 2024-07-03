@@ -1,27 +1,70 @@
-import React from "react";
+import React, { useState } from "react";
 import { ReactComponent as Logo } from "../../Images/ETHER _ NORDIC_bright.svg";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-white transition ease transform duration-300`;
+
   return (
-    <>
-      <div className="mx-auto bg-tommy-background border-b-2 px-10 md:py-3 fixed w-screen">
-        <div className="flex flex-col md:flex-row justify-between items-center mt-5">
-          <div className="Name">
-            <a href="#landing">Tom Ederstål</a>
-          </div>
-          <div className="Buttons flex space-x-4">
-            <a href="#container">About</a>
-            <a href="#projects">Portfolio</a>
-            <a href="#services">Services</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact</a>
-          </div>
-          <div className="Logo">
-            <Logo />
-          </div>
-        </div>
+    <nav className="flex items-center justify-between flex-wrap bg-gray-800 p-6 fixed w-full z-10 top-0">
+      <div className="flex items-center flex-shrink-0 text-white mr-6">
+        <a className="text-white no-underline hover:text-white hover:no-underline" href="#landing">
+          <span className="text-1xl pl-2">Tom Ederstål</span>
+        </a>
       </div>
-    </>
+
+      <div className="block lg:hidden">
+      <button
+        className="flex flex-col h-12 w-12 border-2 border-gray-500 rounded justify-center items-center group"
+        onClick={() => setMenuOpen(!menuOpen)}
+    >
+        <div
+            className={`${genericHamburgerLine} ${
+              menuOpen
+                    ? "rotate-45 translate-y-3 opacity-50 group-hover:opacity-100"
+                    : "opacity-50 group-hover:opacity-100"
+            }`}
+        />
+        <div className={`${genericHamburgerLine} ${menuOpen ? "opacity-0" : "opacity-50 group-hover:opacity-100"}`} />
+        <div
+            className={`${genericHamburgerLine} ${
+              menuOpen
+                    ? "-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100"
+                    : "opacity-50 group-hover:opacity-100"
+            }`}
+        />
+    </button>
+      </div>
+
+      <div className={`w-full flex-grow lg:flex lg:items-center lg:w-auto ${menuOpen ? "block" : "hidden"} lg:block pt-6 lg:pt-0`} id="nav-content">
+        <ul className="list-reset lg:flex justify-end flex-1 items-center">
+          <li className="mr-3">
+            <a className="inline-block text-gray-400 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#container">About</a>
+          </li>
+          <li className="mr-3">
+            <a className="inline-block text-gray-400 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#projects">Portfolio</a>
+          </li>
+          <li className="mr-3">
+            <a className="inline-block text-gray-400 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#services">Services</a>
+          </li>
+          <li className="mr-3">
+            <a className="inline-block text-gray-400 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#testimonials">Testimonials</a>
+          </li>
+          <li className="mr-3">
+            <a className="inline-block text-gray-400 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div className="hidden lg:flex">
+        <Logo />
+      </div>
+    </nav>
   );
 };
 
