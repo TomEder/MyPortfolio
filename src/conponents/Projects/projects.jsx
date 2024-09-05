@@ -12,7 +12,7 @@ const MedexaImg = medexa;
 
 const Projects = () => {
   return (
-    <div className="bg-tommy-background m-auto text-center px-5 h-screen md:px-16 lg:px-32 py-16 md:py-24 border-b-4">
+    <div className="bg-tommy-background m-auto text-center px-5 h-auto md:px-16 lg:px-32 py-16 md:py-24 border-b-4">
       <h2 className="text-3xl md:text-4xl my-5 text-tommy-text overflow-hidden">
         My Latest Work
       </h2>

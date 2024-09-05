@@ -6,7 +6,7 @@ const jagimg = Jag;
 const Container = () => {
   return (
     <>
-      <div className="bg-gradient-to-t w-screen h-screen from-tommy-lower-bg to-tommy-background pt-10 flex flex-col md:flex-row items-center justify-between px-5 md:px-10 border-b-4">
+      <div className="bg-gradient-to-t w-screen h-auto from-tommy-lower-bg to-tommy-background pt-10 flex flex-col md:flex-row items-center justify-between px-5 md:px-10 border-b-4">
         <div className="text-center md:text-left md:w-1/2">
           <h1 className="bg-transparent text-4xl md:text-6xl text-tommy-text overflow-hidden">
             Tom Ederstål
