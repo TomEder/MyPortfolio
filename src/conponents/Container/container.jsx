@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Jag from "../../Images/Jag4.png";
 import { Link } from "react-scroll";
 
