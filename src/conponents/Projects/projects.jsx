@@ -2,7 +2,6 @@ import React from "react";
 
 import Coolwolves from "../../Images/CoolWolves.jpg";
 import BioZone from "../../Images/BioZone.jpg";
-import MyMovies from "../../Images/MyMovies.jpg";
 import medexa from "../../Images/Medexa.png";
 
 const CoolWolvesImg = Coolwolves;
