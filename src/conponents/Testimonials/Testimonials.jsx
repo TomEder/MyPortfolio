@@ -6,13 +6,13 @@ import "./Testimonials.css"; // Add this for custom styles
 
 const testimonials = [
   {
-    name: "Nabil Benali",
+    name: "Nabil",
     role: "Fullstack Developer",
     quote:
       "Tom is an outstanding developer who thrives on challenges. His ability to tackle complex problems and find effective solutions is truly impressive. He is a valuable asset to any team, and his enthusiasm and expertise inspire everyone around him. I highly recommend Tom for any project or team looking for a dedicated and skilled developer.",
   },
-  { name: "TBA", role: "Multimedia Producer", quote: "Quote coming later." },
-  { name: "TBA", role: "Development Manager", quote: "Quote coming later." },
+  { name: "Hrodvar", role: "Development manager", quote: "It has been educational and rewarding to have Tom in our development team. Tom has been a part of our development team during the years 2023 and 2024. His task has been to design and develop a new config editor. Tom is a kind, driven, and ambitious developer." },
+  { name: "Victor", role: "Multimedia producer", quote: "Quote coming later." },
   { name: "TBA", role: "Manager", quote: "Quote coming later." },
 ];
 
