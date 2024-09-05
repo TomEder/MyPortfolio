@@ -7,7 +7,6 @@ import medexa from "../../Images/Medexa.png";
 
 const CoolWolvesImg = Coolwolves;
 const BioZoneImg = BioZone;
-const MoviesImg = MyMovies;
 const MedexaImg = medexa;
 
 const Projects = () => {
