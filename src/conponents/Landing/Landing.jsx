@@ -31,35 +31,45 @@ const Landing = () => {
     <p className="text-sm md:text-lg text-gray-700 mb-6">
       I can also build APIs with .NET and C#.
     </p>
-    <button className="bg-button-background text-white hover:bg-button-hover py-2 px-4 md:py-3 md:px-6 rounded mb-6 md:mb-10">
-      Hire me!
-    </button>
-    <div className="flex space-x-4 mb-6 md:mb-10 bg-slate-500 rounded-3xl px-2 md:px-3">
-      <a
-        href="https://github.com"
-        className="text-white text-xl md:text-2xl hover:bg-button-hover p-2 md:p-3 rounded-full"
-      >
-        <FontAwesomeIcon icon={faGithub} />
-      </a>
-      <a
-        href="https://instagram.com"
-        className="text-white text-xl md:text-2xl hover:bg-button-hover p-2 md:p-3 rounded-full"
-      >
-        <FontAwesomeIcon icon={faInstagram} />
-      </a>
-      <a
-        href="https://linkedin.com"
-        className="text-white text-xl md:text-2xl hover:bg-button-hover p-2 md:p-3 rounded-full"
-      >
-        <FontAwesomeIcon icon={faLinkedin} />
-      </a>
-      <a
-        href="https://twitter.com"
-        className="text-white text-xl md:text-2xl hover:bg-button-hover p-2 md:p-3 rounded-full"
-      >
-        <FontAwesomeIcon icon={faTwitter} />
-      </a>
-    </div>
+    <motion.div
+          initial={{ x: "-100vw" }}
+          animate={{ x: "0" }}
+          transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 20,
+            mass: 1,
+            bounce: 0.3,
+            delay: 2.5,
+            duration: 2,
+          }}
+          className="flex space-x-4 mb-6 md:mb-10 bg-slate-500 rounded-3xl px-2 md:px-3"
+        >
+          <a
+            href="https://github.com"
+            className="text-white text-xl md:text-2xl hover:bg-button-hover p-2 md:p-3 rounded-full"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+          <a
+            href="https://instagram.com"
+            className="text-white text-xl md:text-2xl hover:bg-button-hover p-2 md:p-3 rounded-full"
+          >
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a
+            href="https://linkedin.com"
+            className="text-white text-xl md:text-2xl hover:bg-button-hover p-2 md:p-3 rounded-full"
+          >
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a
+            href="https://twitter.com"
+            className="text-white text-xl md:text-2xl hover:bg-button-hover p-2 md:p-3 rounded-full"
+          >
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+        </motion.div>
   </div>
 </div>
   );

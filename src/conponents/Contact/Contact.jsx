@@ -12,7 +12,7 @@ function Contact() {
                     <div>
                         <h3 className="text-xl font-bold">Have a question?</h3>
                         <p className="text-gray-600">I am here to help you</p>
-                        <a href="mailto:tom@ethernordic.com" className="text-blue-600">Email Me At tom@ethersteelsoft.com</a>
+                        <a href="mailto:tom@ethersteelsoft.com" className="text-blue-600">Email Me At tom@ethersteelsoft.com</a>
                     </div>
                 </div>
                 <div className="flex items-center justify-center md:justify-start">
