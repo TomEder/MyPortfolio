@@ -3,17 +3,17 @@ import "./Services.css";
 
 const Services = () => {
   return (
-    <div className="bg-tommy-background py-20 px-10 overflow-hidden border-b-4">
-      <div className="text-center mb-10">
-        <h2 className="text-4xl text-blue-600 overflow-hidden">
+    <div className="bg-tommy-background py-16 md:py-20 px-5 md:px-10 overflow-hidden border-b-4">
+      <div className="text-center mb-8 md:mb-10">
+        <h2 className="text-3xl md:text-4xl text-blue-600 overflow-hidden">
           What I offer clients
         </h2>
         <p className="mt-4 text-gray-600">
-          I provide a variety of services to my clients, ranging from web <br />
+          I provide a variety of services to my clients, ranging from web <br className="hidden md:block" />
           development to UX/UI design. Here are some of the services I offer.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center mx-auto py-10 w-1/2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 justify-center mx-auto py-8 md:py-10 w-full md:w-3/4 lg:w-1/2">
         <div className="card">
           <h2 className="card-text">Frontend Development</h2>
           <p>Studied frontend development for 2 years at KYH in Stockholm. This is what I'm best at.</p>
@@ -48,40 +48,40 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="text-center mb-10">
-        <h2 className="text-4xl text-blue-600 overflow-hidden">
+      <div className="text-center mb-8 md:mb-10">
+        <h2 className="text-3xl md:text-4xl text-blue-600 overflow-hidden">
           What I'm learning
         </h2>
         <p className="mt-4 text-gray-600">
-          I am always learning new things to stay up to date with the latest <br />
+          I am always learning new things to stay up to date with the latest <br className="hidden md:block" />
           technologies and trends. Here are some of the things I'm currently
           learning.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center mx-auto py-10 w-1/2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 justify-center mx-auto py-8 md:py-10 w-full md:w-3/4 lg:w-1/2">
           <div className="card">
             <h2 className="card-text">Music Production</h2>
             <p>
-                I have recently started learning music production and sound
-                design using Ableton Live.
+              I have recently started learning music production and sound
+              design using Ableton Live.
             </p>
           </div>
           <div className="card">
             <h2 className="card-text">Video Editing</h2>
             <p>
-                I have started learning video editing using Adobe Premiere Pro.
+              I have started learning video editing using Adobe Premiere Pro.
             </p>
           </div>
           <div className="card">
             <h2 className="card-text">3D Modelling</h2>
             <p>
-                I have started learning 3D modelling using Blender and Cinema 4D.
+              I have started learning 3D modelling using Blender and Cinema 4D.
             </p>
           </div>
           <div className="card">
             <h2 className="card-text">Photography</h2>
             <p>
-                I have started learning photography and photo editing using Adobe Lightroom.
+              I have started learning photography and photo editing using Adobe Lightroom.
             </p>
           </div>
         </div>
