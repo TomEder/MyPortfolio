@@ -16,12 +16,6 @@ function Contact() {
         }));
     };
 
-    // No preventDefault and no fetch - Let Netlify handle form submission
-    const handleSubmit = (e) => {
-        // You can add custom form validation here if needed
-        // Netlify will now handle the form submission
-    };
-
     return (
         <div className="flex flex-col lg:flex-row items-center justify-around p-6 md:p-10 h-auto md:h-screen bg-gray-100 border-b-4">
             {/* Contact Information Section */}
@@ -50,7 +44,7 @@ function Contact() {
 
             {/* Contact Form Section */}
             <div className="w-full lg:w-1/2 p-4 md:p-8">
-                <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+                <form name="contact" method="POST" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact" />
                     <div className="mb-4">
                         <input
@@ -60,6 +54,7 @@ function Contact() {
                             placeholder="Your Name"
                             value={formData.name}
                             onChange={handleInputChange}
+                            required
                         />
                     </div>
                     <div className="mb-4">
@@ -70,6 +65,7 @@ function Contact() {
                             placeholder="Your Email"
                             value={formData.email}
                             onChange={handleInputChange}
+                            required
                         />
                     </div>
                     <div className="mb-4">
@@ -80,6 +76,7 @@ function Contact() {
                             placeholder="Subject"
                             value={formData.subject}
                             onChange={handleInputChange}
+                            required
                         />
                     </div>
                     <div className="mb-4">
@@ -89,6 +86,7 @@ function Contact() {
                             placeholder="Your Message"
                             value={formData.message}
                             onChange={handleInputChange}
+                            required
                         ></textarea>
                     </div>
                     <div className="flex justify-center md:justify-start">
