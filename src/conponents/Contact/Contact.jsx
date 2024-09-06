@@ -41,8 +41,7 @@ function Contact() {
       <div className="w-full lg:w-1/2 p-4 md:p-8">
         <form
           name="contact v1"
-          method="post"
-          data-netlify="true"
+          netlify
         >
           <input type="hidden" name="form-name" value="contact v1" />
 
