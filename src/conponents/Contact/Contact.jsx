@@ -19,9 +19,6 @@ function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevent the default page reload
 
-        // You can include custom logic here, like validation or showing a success message
-        console.log('Form submitted:', formData);
-
         // Allow Netlify to process the form after custom logic
         const form = e.target;
         const formData = new FormData(form);
