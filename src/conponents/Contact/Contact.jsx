@@ -78,6 +78,7 @@ function Contact() {
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
           </div>
+            <button type="submit">Send</button>
         </form>
         {/* <form
           name="contact v1"
