@@ -1,21 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
   return (
     <div className="flex flex-col lg:flex-row items-center justify-around p-6 md:p-10 h-auto md:h-screen bg-gray-100 border-b-4">
       {/* Contact Information Section */}
@@ -55,56 +40,58 @@ function Contact() {
       {/* Contact Form Section */}
       <div className="w-full lg:w-1/2 p-4 md:p-8">
         <form
-          name="contact"
-          method="POST"
+          name="contact v1"
+          method="post"
           data-netlify="true"
-          data-netlify-honeypot="bot-field"
+          onSubmit="submit"
         >
-          <input type="hidden" name="form-name" value="contact" />
-          <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="contact v1" />
+
           <div className="mb-4">
-            <input
-              type="text"
-              name="name"
-              className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg"
-              placeholder="Your Name"
-              value={formData.name}
-              onChange={handleInputChange}
-              required
-            />
+            <label>
+              Name: <br />
+              <input
+                type="text"
+                name="Your-name"
+                className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg"
+                placeholder="Your Name"
+              />
+            </label>
           </div>
+
           <div className="mb-4">
-            <input
-              type="email"
-              name="email"
-              className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg"
-              placeholder="Your Email"
-              value={formData.email}
-              onChange={handleInputChange}
-              required
-            />
+            <label htmlFor="email">
+              Email: <br />
+              <input
+                type="email"
+                name="email"
+                className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg"
+                placeholder="Your Email"
+              />
+            </label>
           </div>
+
           <div className="mb-4">
-            <input
-              type="text"
-              name="subject"
-              className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg"
-              placeholder="Subject"
-              value={formData.subject}
-              onChange={handleInputChange}
-              required
-            />
+            <label>
+              Subject: <br />
+              <input
+                type="text"
+                className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg"
+                placeholder="Subject"
+              />
+            </label>
           </div>
+
           <div className="mb-4">
-            <textarea
-              name="message"
-              className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg h-32 md:h-40"
-              placeholder="Your Message"
-              value={formData.message}
-              onChange={handleInputChange}
-              required
-            ></textarea>
+            <label>
+              Message: <br />
+              <textarea
+                className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg h-32 md:h-40"
+                placeholder="Your Message"
+              ></textarea>
+            </label>
           </div>
+
           <div className="flex justify-center md:justify-start">
             <button
               type="submit"
