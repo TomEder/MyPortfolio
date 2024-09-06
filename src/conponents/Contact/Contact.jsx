@@ -16,20 +16,10 @@ function Contact() {
         }));
     };
 
+    // No preventDefault and no fetch - Let Netlify handle form submission
     const handleSubmit = (e) => {
-        e.preventDefault(); // Prevent the default page reload
-
-        // Allow Netlify to process the form after custom logic
-        const form = e.target;
-        const formData = new FormData(form);
-
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString(),
-        })
-        .then(() => alert("Form successfully submitted"))
-        .catch((error) => alert(error));
+        // You can add custom form validation here if needed
+        // Netlify will now handle the form submission
     };
 
     return (
