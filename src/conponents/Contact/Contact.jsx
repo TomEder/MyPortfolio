@@ -1,6 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 
 function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  console.log(name, email, message);
   return (
     <div className="flex flex-col lg:flex-row items-center justify-around p-6 md:p-10 h-auto md:h-screen bg-gray-100 border-b-4">
       {/* Contact Information Section */}
@@ -39,34 +44,40 @@ function Contact() {
 
       {/* Contact Form Section */}
       <div className="w-full lg:w-1/2 p-4 md:p-8">
-        <form name="contact" method="POST" data-netlify="true">
-          <p>
-            <label>
-              Your Name: <input type="text" name="name" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Email: <input type="email" name="email" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Role:{" "}
-              <select name="role[]" multiple>
-                <option value="leader">Leader</option>
-                <option value="follower">Follower</option>
-              </select>
-            </label>
-          </p>
-          <p>
-            <label>
-              Message: <textarea name="message"></textarea>
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
+        <form name="contact" method="POST">
+            <input type="hidden" name="form-name" value="contact" />
+          <div>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div>
+            <label for="message">Message:</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your Message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            ></textarea>
+          </div>
         </form>
         {/* <form
           name="contact v1"
