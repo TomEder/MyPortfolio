@@ -46,9 +46,10 @@ function Contact() {
       <div className="w-full lg:w-1/2 p-4 md:p-8">
         <form name="contact" method="POST">
             <input type="hidden" name="form-name" value="contact" />
-          <div>
+          <div className="mb-4">
             <label for="name">Name:</label>
             <input
+            className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg"
               type="text"
               id="name"
               name="name"
@@ -57,9 +58,10 @@ function Contact() {
               onChange={(e) => setName(e.target.value)}
             />
           </div>
-          <div>
+          <div className="mb-4">
             <label htmlFor="email">Email:</label>
             <input
+            className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg"
               type="email"
               id="email"
               name="email"
@@ -68,9 +70,10 @@ function Contact() {
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
-          <div>
+          <div className="mb-4">
             <label for="message">Message:</label>
             <textarea
+            className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg h-32 md:h-40"
               name="message"
               id="message"
               placeholder="Your Message"
@@ -78,68 +81,12 @@ function Contact() {
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
           </div>
-            <button type="submit">Send</button>
-        </form>
-        {/* <form
-          name="contact v1"
-          netlify
-        >
-          <input type="hidden" name="form-name" value="contact v1" />
-
-          <div className="mb-4">
-            <label>
-              Name: <br />
-              <input
-                type="text"
-                name="Your-name"
-                className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg"
-                placeholder="Your Name"
-              />
-            </label>
-          </div>
-
-          <div className="mb-4">
-            <label htmlFor="email">
-              Email: <br />
-              <input
-                type="email"
-                name="email"
-                className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg"
-                placeholder="Your Email"
-              />
-            </label>
-          </div>
-
-          <div className="mb-4">
-            <label>
-              Subject: <br />
-              <input
-                type="text"
-                className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg"
-                placeholder="Subject"
-              />
-            </label>
-          </div>
-
-          <div className="mb-4">
-            <label>
-              Message: <br />
-              <textarea
-                className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg h-32 md:h-40"
-                placeholder="Your Message"
-              ></textarea>
-            </label>
-          </div>
-
-          <div className="flex justify-center md:justify-start">
-            <button
-              type="submit"
-              className="w-full md:w-1/2 bg-button-color hover:bg-button-hover text-white p-3 md:p-4 rounded-lg"
-            >
-              Send Message
+            <button 
+            type="submit" 
+            className="w-full md:w-1/2 bg-button-color hover:bg-button-hover text-white p-3 md:p-4 rounded-lg">
+                Send
             </button>
-          </div>
-        </form> */}
+        </form>
       </div>
     </div>
   );
