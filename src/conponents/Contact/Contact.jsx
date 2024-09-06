@@ -29,18 +29,19 @@ function Contact() {
 
             {/* Contact Form Section */}
             <div className="w-full lg:w-1/2 p-4 md:p-8">
-                <form>
+                <form name="contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact" />
                     <div className="mb-4">
-                        <input type="text" className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg" placeholder="Your Name" />
+                        <input type="text" name="name" className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg" placeholder="Your Name" />
                     </div>
                     <div className="mb-4">
-                        <input type="email" className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg" placeholder="Your Email" />
+                        <input type="email" name="email" className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg" placeholder="Your Email" />
                     </div>
                     <div className="mb-4">
-                        <input type="text" className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg" placeholder="Subject" />
+                        <input type="text" name="subject" className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg" placeholder="Subject" />
                     </div>
                     <div className="mb-4">
-                        <textarea className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg h-32 md:h-40" placeholder="Your Message"></textarea>
+                        <textarea name="message" className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg h-32 md:h-40" placeholder="Your Message"></textarea>
                     </div>
                     <div className="flex justify-center md:justify-start">
                         <button type="submit" className="w-full md:w-1/2 bg-button-color hover:bg-button-hover text-white p-3 md:p-4 rounded-lg">Send Message</button>
