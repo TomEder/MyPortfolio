@@ -3,7 +3,6 @@ import "./Projects.css";
 import BiozoneImg from "../../Images/BioZone.jpg";
 import MedexaImg from "../../Images/Medexa.png";
 import FTTLanding from "../../Images/FTTLanding.png";
-import LabelleLanding from "../../Images/LabelleLanding.png";
 import VectorBG from "../../Images/VectorBG.png";
 
 const projectData = [
