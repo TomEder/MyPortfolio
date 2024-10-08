@@ -11,7 +11,6 @@ import Contact from "./conponents/Contact/Contact";
 export default function App() {
   return (
     <div className="w-screen overflow-hidden">
-      <Header />
       <div id="landing">
         <Landing />
       </div>
