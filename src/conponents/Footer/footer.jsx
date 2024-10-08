@@ -13,12 +13,12 @@ const Footer = () => {
             <img
               src={Name}
               alt="Name"
-              className="w-[150px] ml-10 md:w-[220px] md:ml-64"
+              className="w-[150px] ml-10 md:w-[220px] md:ml-64 mb-2"
             />
           </div>
           <p className="text-sm">Freelance Web Developer | Stockholm, Sweden</p>
         </div>
-        <div className="flex space-x-6">
+        <div className="grid grid-cols-3 gap-3">
           <a
             href="mailto:tom@ethersteelsoft.com"
             className="text-[#8A8A8A] hover:text-[#D35400] transition-colors"
@@ -26,7 +26,7 @@ const Footer = () => {
             Email Me
           </a>
           <a
-            href="https://www.linkedin.com/in/tomederstal"
+            href="https://www.linkedin.com/in/tom-ederst%C3%A5l-5b3b99101/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#8A8A8A] hover:text-[#D35400] transition-colors"
@@ -34,12 +34,28 @@ const Footer = () => {
             LinkedIn
           </a>
           <a
-            href="https://github.com/tomederstal"
+            href="https://github.com/tomeder"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#8A8A8A] hover:text-[#D35400] transition-colors"
           >
             GitHub
+          </a>
+          <a
+            href="https://www.instagram.com/ethersteel_soft/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#8A8A8A] hover:text-[#D35400] transition-colors"
+          >
+            Instagram
+          </a>
+          <a
+            href="https://www.threads.net/@ethersteel_soft"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#8A8A8A] hover:text-[#D35400] transition-colors"
+          >
+            Threads
           </a>
         </div>
       </div>

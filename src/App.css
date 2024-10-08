@@ -1,11 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sono:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Syne:wght@400..800&display=swap");
 
 html {
   scroll-behavior: smooth;
 }
 
-* {
+body {
+  font-family: "Syncopate", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Syncopate", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
   font-family: "Syne", sans-serif;
-  overflow-x: hidden;
 }

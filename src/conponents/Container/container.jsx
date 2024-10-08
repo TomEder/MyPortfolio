@@ -9,12 +9,12 @@ const About = () => {
     <div className="w-screen h-screen bg-[#181818] flex flex-col md:flex-row items-center justify-between px-5 md:px-10">
       <div className="text-center md:text-left md:w-1/2 mt-8">
         <h1 className="bg-transparent text-2xl md:text-6xl text-[#8A8A8A] overflow-hidden">
-          Tom Ederstål
+          TOM EDERSTÅL
         </h1>
         <p className="bg-transparent text-xl md:text-3xl text-[#8A8A8A] mt-4 overflow-hidden">
           Freelance web developer
         </p>
-        <h2 className="text-sm md:text-xl my-3 md:my-5 text-[#8A8A8A] overflow-y-hidden">
+        <p className="text-sm md:text-xl my-3 md:my-5 text-[#8A8A8A] overflow-y-hidden">
           With a two-year KYH diploma in frontend development and extensive
           expertise in UX/UI design, I’ve built a solid technical foundation,
           working at companies like Great-IT and Medexa Diagnostisk Service AB.
@@ -24,7 +24,7 @@ const About = () => {
           supervisors alike. I’m a team player with a proactive mindset,
           constantly seeking opportunities for growth and staying on top of the
           latest trends in web development.
-        </h2>
+        </p>
         <button className="buttonStyle" href>
           <Link
             to="contact"

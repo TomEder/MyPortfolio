@@ -7,21 +7,21 @@ import VectorBG from "../../Images/VectorBG.png";
 
 const projectData = [
   {
-    title: "Biozone Website Redesign",
+    title: "BIOZONE WEBSITE REDESIGN",
     image: BiozoneImg,
     description:
       "Used Wordpress to build a modern website for Biozone. This project involved redesigning the website to improve user experience and SEO.",
     tech: ["Wordpress", "JavaScript", "SEO"],
   },
   {
-    title: "Medexa Config Editor Web App",
+    title: "MEDEXA CONFIG EDITOR WEB APP",
     image: MedexaImg,
     description:
       "I independently developed a web application from concept to finished product according to the client's requirements, focusing on designing and implementing with ASP.NET Core and AngularJS. The application generates configuration files and allows XML uploads, streamlining the client's workflow and reducing errors in configuration management.",
     tech: ["Angular", ".NET", "C#", "Tailwind CSS"],
   },
   {
-    title: "Freelance Time Tracker",
+    title: "FREELANCE TIME TRACKER APP",
     image: FTTLanding,
     description:
       "I am developing an app that helps hourly employees easily keep track of hours worked and money earned for different projects. The user creates a project, sets an hourly rate, and starts a timer for each work session. When the timer is stopped, the app automatically calculates the earnings and adds it to the total for the billing period.",
@@ -52,7 +52,7 @@ const Projects = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <h1 className="text-4xl font-bold md:mb-72 mt-20 text-[#8A8A8A] text-center">
+      <h1 className="text-4xl md:mb-72 mt-20 text-[#8A8A8A] text-center">
         MY LATEST WORK
       </h1>
       <div className="projects-grid md:p-20 mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 items-center justify-center">

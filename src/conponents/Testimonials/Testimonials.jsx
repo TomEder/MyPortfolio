@@ -80,7 +80,7 @@ const Testimonials = () => {
               key={index}
               className="p-4 h-auto flex items-center justify-center"
             >
-              <div className="testimonial-card bg-[#282828] text-white border-2 border-[#282828] rounded-2xl shadow-md p-10 h-[460px] flex flex-col justify-between items-center">
+              <div className="testimonial-card bg-[#282828] text-white border-2 border-[#282828] rounded-2xl shadow-md p-10 md:h-[550px] h-[460px] flex flex-col justify-between items-center">
                 <div className="flex flex-col items-center">
                   <h3 className="text-md font-bold text-[#D35400] mb-2">
                     {testimonial.name}
@@ -88,8 +88,8 @@ const Testimonials = () => {
                   <h4 className="text-sm text-[#8A8A8A] mb-4">
                     {testimonial.role}
                   </h4>
-                  <div className="text-sm my-5 text-[#8A8A8A]">
-                    "{testimonial.quote}"
+                  <div className="my-5 text-[#8A8A8A]">
+                    <p className="md:text-lg text-sm">"{testimonial.quote}"</p>
                   </div>
                 </div>
               </div>
