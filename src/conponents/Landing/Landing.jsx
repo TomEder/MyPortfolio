@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./Landing.css"; // Custom CSS if needed
 import landingBackground from "../../Images/LandingBackground.jpg";
 import Logo from "../../Images/Logo.png";
@@ -24,11 +25,56 @@ const Landing = () => {
         </div>
         <div className="mt-10 flex flex-col items-center gap-4 md:grid md:grid-cols-3 md:gap-6">
           <div className="col-span-3 flex justify-center mb-4"></div>
-          <button className="buttonStyle">ABOUT</button>
-          <button className="buttonStyle">PORTFOLIO</button>
-          <button className="buttonStyle">SERVICES</button>
-          <button className="buttonStyle">TESTIMONIALS</button>
-          <button className="buttonStyle">CONTACT</button>
+          <Link
+            to="container"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="buttonStyle"
+          >
+            ABOUT
+          </Link>
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="buttonStyle"
+          >
+            PORTFOLIO
+          </Link>
+          <Link
+            to="services"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="buttonStyle"
+          >
+            SERVICES
+          </Link>
+          <Link
+            to="testimonials"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="buttonStyle"
+          >
+            TESTIMONIALS
+          </Link>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="buttonStyle"
+          >
+            CONTACT
+          </Link>
         </div>
       </div>
     </div>
