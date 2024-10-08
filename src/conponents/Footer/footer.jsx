@@ -21,41 +21,41 @@ const Footer = () => {
         <div className="grid grid-cols-3 gap-3">
           <a
             href="mailto:tom@ethersteelsoft.com"
-            className="text-[#8A8A8A] hover:text-[#D35400] transition-colors"
+            className="text-[#8A8A8A] text-sm hover:text-[#D35400] transition-colors"
           >
-            Email Me
+            EMAIL ME
           </a>
           <a
             href="https://www.linkedin.com/in/tom-ederst%C3%A5l-5b3b99101/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#8A8A8A] hover:text-[#D35400] transition-colors"
+            className="text-[#8A8A8A] text-sm hover:text-[#D35400] transition-colors"
           >
-            LinkedIn
+            LINKEDIN
           </a>
           <a
             href="https://github.com/tomeder"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#8A8A8A] hover:text-[#D35400] transition-colors"
+            className="text-[#8A8A8A] text-sm hover:text-[#D35400] transition-colors"
           >
-            GitHub
+            GITHUB
           </a>
           <a
             href="https://www.instagram.com/ethersteel_soft/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#8A8A8A] hover:text-[#D35400] transition-colors"
+            className="text-[#8A8A8A] text-sm hover:text-[#D35400] transition-colors"
           >
-            Instagram
+            INSTAGRAM
           </a>
           <a
             href="https://www.threads.net/@ethersteel_soft"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#8A8A8A] hover:text-[#D35400] transition-colors"
+            className="text-[#8A8A8A] text-sm hover:text-[#D35400] transition-colors"
           >
-            Threads
+            THREADS
           </a>
         </div>
       </div>
