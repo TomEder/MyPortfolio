@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Projects.css";
 import BiozoneImg from "../../Images/BioZone.jpg";
-import MedexaImg from "../../Images/Medexa.png";
 import FTTLanding from "../../Images/FTTLanding.png";
 import VectorBG from "../../Images/VectorBG.png";
 
