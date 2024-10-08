@@ -8,7 +8,7 @@ import Name from "../../Images/Name.png";
 const Landing = () => {
   return (
     <div
-      className="min-h-screen bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center text-center p-5 md:p-10"
+      className="h-screen bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center text-center p-5 md:p-10"
       style={{ backgroundImage: `url(${landingBackground})` }}
     >
       <div
@@ -29,7 +29,6 @@ const Landing = () => {
             to="container"
             spy={true}
             smooth={true}
-            offset={-70}
             duration={500}
             className="buttonStyle"
           >
@@ -39,7 +38,6 @@ const Landing = () => {
             to="projects"
             spy={true}
             smooth={true}
-            offset={-70}
             duration={500}
             className="buttonStyle"
           >
@@ -49,7 +47,6 @@ const Landing = () => {
             to="services"
             spy={true}
             smooth={true}
-            offset={-70}
             duration={500}
             className="buttonStyle"
           >
@@ -59,7 +56,6 @@ const Landing = () => {
             to="testimonials"
             spy={true}
             smooth={true}
-            offset={-70}
             duration={500}
             className="buttonStyle"
           >
@@ -69,7 +65,6 @@ const Landing = () => {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-70}
             duration={500}
             className="buttonStyle"
           >
