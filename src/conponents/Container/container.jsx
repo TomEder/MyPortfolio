@@ -32,7 +32,6 @@ const About = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="inline-block text-2xl text-gray-400 no-underline hover:text-gray-200 hover:text-underline py-2 px-2 cursor-pointer"
           >
             Contact me!
           </Link>

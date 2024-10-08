@@ -28,13 +28,13 @@ const projectData = [
       "I am developing an app that helps hourly employees easily keep track of hours worked and money earned for different projects. The user creates a project, sets an hourly rate, and starts a timer for each work session. When the timer is stopped, the app automatically calculates the earnings and adds it to the total for the billing period.",
     tech: ["React", "Tailwind CSS", "Firebase"],
   },
-  {
+  /* {
     title: "Labelle studio website",
     image: LabelleLanding,
     description:
       "I designed and developed a website for a local hair salon. The website showcases the studio's portfolio and services, and includes a contact form for potential clients to reach out.",
     tech: ["React", "Tailwind CSS", "Instagram API", "Figma"],
-  },
+  }, */
 ];
 
 const Projects = () => {
@@ -85,7 +85,11 @@ const Projects = () => {
             <h2 className="text-3xl font-semibold text-[#D35400] mb-4">
               {selectedProject.title}
             </h2>
-            <img className="m-auto" src={selectedProject.image} alt="Project" />
+            <img
+              className="m-auto max-h-96"
+              src={selectedProject.image}
+              alt="Project"
+            />
             {selectedProject.tech && (
               <div className="flex flex-wrap mt-4">
                 {selectedProject.tech.map((tech, index) => (
