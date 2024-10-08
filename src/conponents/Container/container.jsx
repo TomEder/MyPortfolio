@@ -6,7 +6,7 @@ const jagimg = Jag;
 
 const About = () => {
   return (
-    <div className="w-screen h-screen bg-[#181818] flex flex-col md:flex-row items-center justify-between px-5 md:px-10 border-b-4">
+    <div className="w-screen h-screen bg-[#181818] flex flex-col md:flex-row items-center justify-between px-5 md:px-10">
       <div className="text-center md:text-left md:w-1/2 mt-8">
         <h1 className="bg-transparent text-2xl md:text-6xl text-[#8A8A8A] overflow-hidden">
           Tom Ederstål
