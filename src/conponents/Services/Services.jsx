@@ -1,90 +1,55 @@
 import React from "react";
 import "./Services.css";
+import VectorBG from "../../Images/VectorBG.png";
+
+const servicesData = [
+  {
+    title: "Web Development",
+    description:
+      "Building responsive, fast, and modern websites using the latest technologies like React, Angular, and more.",
+  },
+  {
+    title: "UI/UX Design",
+    description:
+      "Designing intuitive user interfaces and ensuring great user experiences with tools like Figma and Sketch.",
+  },
+  {
+    title: "SEO Optimization",
+    description:
+      "Improving website visibility on search engines by using SEO best practices and optimization techniques.",
+  },
+  {
+    title: "Full Stack Development",
+    description:
+      "Creating complete web applications including both frontend and backend using technologies like Node.js, .NET, and more.",
+  },
+];
 
 const Services = () => {
   return (
-    <div className="bg-tommy-background py-16 md:py-20 px-5 md:px-10 overflow-hidden border-b-4">
-      <div className="text-center mb-8 md:mb-10">
-        <h2 className="text-3xl md:text-4xl text-blue-600 overflow-hidden">
-          What I offer clients
-        </h2>
-        <p className="mt-4 text-gray-600">
-          I provide a variety of services to my clients, ranging from web <br className="hidden md:block" />
-          development to UX/UI design. Here are some of the services I offer.
-        </p>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 justify-center mx-auto py-8 md:py-10 w-full md:w-3/4 lg:w-1/2">
-        <div className="card">
-          <h2 className="card-text">Frontend Development</h2>
-          <p>Studied frontend development for 2 years at KYH in Stockholm. This is what I'm best at.</p>
-        </div>
-        <div className="card">
-          <h2 className="card-text">App Development</h2>
-          <p>
-            I have experience developing mobile applications for both Android
-            and iOS.
-          </p>
-        </div>
-        <div className="card">
-          <h2 className="card-text">Backend Development</h2>
-          <p>
-            I have experience developing backend services using Node.js and
-            C# with ASP.NET.
-          </p>
-        </div>
-        <div className="card">
-          <h2 className="card-text">UX/UI Design</h2>
-          <p>
-            I love designing user interfaces and user experiences
-            for web and mobile applications.
-          </p>
-        </div>
-        <div className="card">
-          <h2 className="card-text">SEO Optimization</h2>
-          <p>
-            I help optimizing websites for search engines to improve
-            their visibility online.
-          </p>
-        </div>
-      </div>
-
-      <div className="text-center mb-8 md:mb-10">
-        <h2 className="text-3xl md:text-4xl text-blue-600 overflow-hidden">
-          What I'm learning
-        </h2>
-        <p className="mt-4 text-gray-600">
-          I am always learning new things to stay up to date with the latest <br className="hidden md:block" />
-          technologies and trends. Here are some of the things I'm currently
-          learning.
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 justify-center mx-auto py-8 md:py-10 w-full md:w-3/4 lg:w-1/2">
-          <div className="card">
-            <h2 className="card-text">Music Production</h2>
-            <p>
-              I have recently started learning music production and sound
-              design using Ableton Live.
-            </p>
+    <div
+      className="services-section bg-[#181818] min-h-screen p-10 flex flex-col items-center"
+      style={{
+        backgroundImage: `url(${VectorBG})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <h1 className="text-4xl font-bold mb-20 mt-20 text-[#8A8A8A] text-center">
+        MY SERVICES
+      </h1>
+      <div className="services-grid p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 items-center justify-center">
+        {servicesData.map((service, index) => (
+          <div
+            key={index}
+            className="service-card border-2 border-[#282828] p-6 bg-[#282828] rounded-lg shadow-lg text-center"
+          >
+            <h2 className="text-2xl font-semibold mb-4 text-[#D35400]">
+              {service.title}
+            </h2>
+            <p className="text-[#8A8A8A]">{service.description}</p>
           </div>
-          <div className="card">
-            <h2 className="card-text">Video Editing</h2>
-            <p>
-              I have started learning video editing using Adobe Premiere Pro.
-            </p>
-          </div>
-          <div className="card">
-            <h2 className="card-text">3D Modelling</h2>
-            <p>
-              I have started learning 3D modelling using Blender and Cinema 4D.
-            </p>
-          </div>
-          <div className="card">
-            <h2 className="card-text">Photography</h2>
-            <p>
-              I have started learning photography and photo editing using Adobe Lightroom.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

@@ -1,18 +1,26 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import "./Contact.css";
+import VectorBG from "../../Images/VectorBG.png";
 
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  console.log(name, email, message);
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-around p-6 md:p-10 h-auto md:h-screen bg-gray-100 border-b-4">
+    <div
+      className="contact-section bg-[#181818] min-h-screen p-10 flex flex-col lg:flex-row items-center justify-around"
+      style={{
+        backgroundImage: `url(${VectorBG})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       {/* Contact Information Section */}
-      <div className="flex flex-col items-start text-center md:text-left mb-8 md:mb-0 w-full md:w-1/2">
+      <div className="flex flex-col items-start text-center md:text-left mb-8 md:mb-0 w-full md:w-1/2 text-[#8A8A8A]">
         <div className="flex items-center mb-6 justify-center md:justify-start">
           <svg
-            className="w-6 h-6 mr-2 text-black"
+            className="w-6 h-6 mr-2 text-[#D35400]"
             fill="currentColor"
             viewBox="0 0 24 24"
           >
@@ -20,15 +28,15 @@ function Contact() {
           </svg>
           <div>
             <h3 className="text-xl font-bold">Have a question?</h3>
-            <p className="text-gray-600">I am here to help you</p>
-            <a href="mailto:tom@ethersteelsoft.com" className="text-blue-600">
+            <p>I am here to help you</p>
+            <a href="mailto:tom@ethersteelsoft.com" className="text-[#D35400]">
               Email Me At tom@ethersteelsoft.com
             </a>
           </div>
         </div>
         <div className="flex items-center justify-center md:justify-start">
           <svg
-            className="w-6 h-6 mr-2 text-black"
+            className="w-6 h-6 mr-2 text-[#D35400]"
             fill="currentColor"
             viewBox="0 0 24 24"
           >
@@ -36,56 +44,80 @@ function Contact() {
           </svg>
           <div>
             <h3 className="text-xl font-bold">Current Location</h3>
-            <p className="text-gray-600">Stockholm, Sweden</p>
-            <p className="text-blue-600">Serving Clients Worldwide</p>
+            <p>Stockholm, Sweden</p>
+            <p className="text-[#D35400]">Serving Clients Worldwide</p>
           </div>
         </div>
       </div>
 
       {/* Contact Form Section */}
       <div className="w-full lg:w-1/2 p-4 md:p-8">
-        <form name="contact" method="POST">
-            <input type="hidden" name="form-name" value="contact" />
-          <div className="mb-4">
-            <label for="name">Name:</label>
+        <form
+          name="contact"
+          method="POST"
+          className="w-full max-w-lg bg-[#282828] p-8 rounded-lg shadow-md"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <div className="mb-6">
+            <label
+              className="block text-[#D35400] text-lg font-bold mb-2"
+              htmlFor="name"
+            >
+              Name
+            </label>
             <input
-            className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg"
+              className="w-full p-3 rounded bg-[#383838] text-[#8A8A8A] border border-[#D35400] focus:outline-none focus:border-[#b84400]"
               type="text"
               id="name"
               name="name"
               placeholder="Your name"
               value={name}
               onChange={(e) => setName(e.target.value)}
+              required
             />
           </div>
-          <div className="mb-4">
-            <label htmlFor="email">Email:</label>
+          <div className="mb-6">
+            <label
+              className="block text-[#D35400] text-lg font-bold mb-2"
+              htmlFor="email"
+            >
+              Email
+            </label>
             <input
-            className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg"
+              className="w-full p-3 rounded bg-[#383838] text-[#8A8A8A] border border-[#D35400] focus:outline-none focus:border-[#b84400]"
               type="email"
               id="email"
               name="email"
               placeholder="Your Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
             />
           </div>
-          <div className="mb-4">
-            <label for="message">Message:</label>
+          <div className="mb-6">
+            <label
+              className="block text-[#D35400] text-lg font-bold mb-2"
+              htmlFor="message"
+            >
+              Message
+            </label>
             <textarea
-            className="w-full p-3 md:p-4 border border-gray-300 bg-slate-300 rounded-lg h-32 md:h-40"
+              className="w-full p-3 rounded bg-[#383838] text-[#8A8A8A] border border-[#D35400] focus:outline-none focus:border-[#b84400]"
               name="message"
               id="message"
               placeholder="Your Message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
+              rows="5"
+              required
             ></textarea>
           </div>
-            <button 
-            type="submit" 
-            className="w-full md:w-1/2 bg-button-color hover:bg-button-hover text-white p-3 md:p-4 rounded-lg">
-                Send
-            </button>
+          <button
+            type="submit"
+            className="w-full md:w-1/2 bg-[#D35400] hover:bg-[#b84400] text-white p-3 rounded-lg transition-colors"
+          >
+            Send
+          </button>
         </form>
       </div>
     </div>
