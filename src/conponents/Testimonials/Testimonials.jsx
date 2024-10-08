@@ -7,19 +7,19 @@ import VectorBG from "../../Images/VectorBG.png";
 
 const testimonials = [
   {
-    name: "Nabil",
+    name: "NABIL",
     role: "Fullstack Developer",
     quote:
       "Tom is an outstanding developer who thrives on challenges. His ability to tackle complex problems and find effective solutions is truly impressive. He is a valuable asset to any team, and his enthusiasm and expertise inspire everyone around him. I highly recommend Tom for any project or team looking for a dedicated and skilled developer.",
   },
   {
-    name: "Hrodvar",
+    name: "HRODVAR",
     role: "Development manager",
     quote:
       "It has been educational and rewarding to have Tom in our development team. Tom has been a part of our development team during the years 2023 and 2024. His task has been to design and develop a new config editor. Tom is a kind, driven, and ambitious developer.",
   },
   {
-    name: "Victor",
+    name: "VICTOR",
     role: "Multimedia producer",
     quote:
       "Tom created my website. He is quick and thorough. I am very happy with the result.",

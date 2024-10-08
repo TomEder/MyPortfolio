@@ -4,22 +4,22 @@ import VectorBG from "../../Images/VectorBG.png";
 
 const servicesData = [
   {
-    title: "Web Development",
+    title: "WEB DEVELOPMENT",
     description:
       "Building responsive, fast, and modern websites using the latest technologies like React, Angular, and more.",
   },
   {
-    title: "UI/UX Design",
+    title: "UI/UX DESIGN",
     description:
       "Designing intuitive user interfaces and ensuring great user experiences with tools like Figma and Sketch.",
   },
   {
-    title: "SEO Optimization",
+    title: "SEO OPTIMIZATION",
     description:
       "Improving website visibility on search engines by using SEO best practices and optimization techniques.",
   },
   {
-    title: "Full Stack Development",
+    title: "FULL STACK DEVELOPMENT",
     description:
       "Creating complete web applications including both frontend and backend using technologies like Node.js, .NET, and more.",
   },
@@ -44,7 +44,7 @@ const Services = () => {
             key={index}
             className="service-card border-2 border-[#282828] p-6 bg-[#282828] rounded-lg shadow-lg text-center"
           >
-            <h2 className="text-2xl font-semibold mb-4 text-[#D35400]">
+            <h2 className="text-lg font-semibold mb-4 text-[#D35400]">
               {service.title}
             </h2>
             <p className="text-[#8A8A8A]">{service.description}</p>

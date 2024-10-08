@@ -74,11 +74,11 @@ const Projects = () => {
 
       {selectedProject && (
         <div
-          className="modal fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center"
+          className="modal fixed inset-0 max-h-screen bg-black bg-opacity-70 flex items-center justify-center"
           onClick={handleCloseModal}
         >
           <div
-            className="modal-content bg-[#282828] p-12 rounded-lg max-w-3xl w-full"
+            className="modal-content bg-[#282828] py-12 px-4 rounded-lg max-w-3xl w-full"
             onClick={(e) => e.stopPropagation()}
           >
             <h2 className="text-3xl font-semibold text-[#D35400] mb-4">
