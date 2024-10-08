@@ -13,13 +13,13 @@ const projectData = [
       "Used Wordpress to build a modern website for Biozone. This project involved redesigning the website to improve user experience and SEO.",
     tech: ["Wordpress", "JavaScript", "SEO"],
   },
-  {
+  /*  {
     title: "MEDEXA CONFIG EDITOR WEB APP",
     image: MedexaImg,
     description:
       "I independently developed a web application from concept to finished product according to the client's requirements, focusing on designing and implementing with ASP.NET Core and AngularJS. The application generates configuration files and allows XML uploads, streamlining the client's workflow and reducing errors in configuration management.",
     tech: ["Angular", ".NET", "C#", "Tailwind CSS"],
-  },
+  }, */
   {
     title: "FREELANCE TIME TRACKER APP",
     image: FTTLanding,
