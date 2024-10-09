@@ -26,6 +26,13 @@ const projectData = [
       "I am developing an app that helps hourly employees easily keep track of hours worked and money earned for different projects. The user creates a project, sets an hourly rate, and starts a timer for each work session. When the timer is stopped, the app automatically calculates the earnings and adds it to the total for the billing period.",
     tech: ["React", "Tailwind CSS", "Firebase"],
   },
+  {
+    title: "WEATHER APP",
+    image: "https://via.placeholder.com/300",
+    description:
+      "I developed a weather app that displays the current weather and forecast for a user's location. The app uses the OpenWeatherMap API to fetch weather data and displays it in a clean, user-friendly interface.",
+    tech: ["React", "OpenWeatherMap API", "Tailwind CSS"],
+  },
   /* {
     title: "Labelle studio website",
     image: LabelleLanding,
