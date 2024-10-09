@@ -1,108 +1,61 @@
-# My Portfolio Project
+# ✨ Tom Ederstål Portfolio Website
 
-## Table of Contents
+Welcome to the repository for **Tom Ederstål's portfolio website**. This project showcases my work as a freelance web developer, including projects, services, testimonials, and contact information. It is designed to provide potential clients and collaborators with an overview of my skills, experience, and capabilities.
 
-- [Introduction](#introduction)
-- [Features](#features)
+## 📋 Table of Contents
+- [Live Demo](#live-demo)
 - [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Running the Project](#running-the-project)
-- [Project Structure](#project-structure)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Setup Instructions](#setup-instructions)
+- [Features](#features)
 - [Contact](#contact)
 
-## Introduction
+## 🌐 Live Demo
+🚀 Check out the live version of the portfolio [here](https://ethersteelsoft.com). The app is hosted with **Netlify**.
 
-Welcome to my portfolio project! This project showcases my skills and work as a developer using React. It includes several sections highlighting different projects, skills, and other professional information.
-This is a work in progress
+## 🛠️ Technologies Used
+- **React**: A JavaScript library for building user interfaces.
+- **Tailwind CSS**: A utility-first CSS framework for styling.
+- **React Slick**: A carousel component used for testimonials.
+- **Firebase**: For backend functionality (e.g., data storage).
+- **EmailJS**: For contact form submission (optional).
 
-## Features
+## ⚙️ Setup Instructions
+To set up the project locally, follow these steps:
 
-- **Responsive Design:** Works on all devices, including mobile, tablet, and desktop.
-- **Interactive UI:** Smooth navigation and interactive elements.
-- **Projects Showcase:** Detailed information about each project with live demos and source code links.
-- **Contact Form:** Easy way to get in touch.
-- **Technologies Used:** Information about the technologies used in the project.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/tomederstal/portfolio-website.git
+   cd portfolio-website
+   ```
 
-## Technologies Used
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-- **React:** A JavaScript library for building user interfaces.
-- **React Router:** For navigation within the app.
-- **Styled Components:** For styling the components.
-- **Axios:** For making HTTP requests.
-- **EmailJS:** For handling contact form submissions.
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
 
-## Getting Started
+4. **Open your browser**
+   Navigate to `http://localhost:3000` to view the site.
 
-### Prerequisites
+## ✨ Features
+- **Projects Page**: Displays recent work with detailed descriptions.
+- **Services Page**: Describes the services offered (web development, UI/UX design, etc.).
+- **Testimonials Slider**: A carousel of testimonials from previous clients.
+- **Contact Page**: Users can send direct messages through a contact form.
+- **Responsive Design**: The website is fully responsive for different screen sizes.
 
-Make sure you have the following installed on your system:
+## 📞 Contact
+If you'd like to get in touch, feel free to reach out via:
+- [LinkedIn](https://www.linkedin.com/in/tomederstal)
+- [Email](mailto:tom@ethersteelsoft.com)
 
-- **Node.js:** (Version 12.x or above)
-- **npm** or **yarn**
+### 📜 License
+This project is open source and available under the [MIT License](LICENSE).
 
-### Installation
+---
 
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/your-username/portfolio-project.git
-    ```
-
-2. Navigate to the project directory:
-    ```sh
-    cd portfolio-project
-    ```
-
-3. Install the dependencies:
-    ```sh
-    npm install
-    ```
-    or
-    ```sh
-    yarn install
-    ```
-
-### Running the Project
-
-To start the development server, run:
-
-```sh
-npm start
-or
-yarn start
-```
-
-### Running the Project
-
-Here is a brief overview of the project's structure:
-
-portfolio-project/
-├── public/
-│   ├── index.html
-│   └── ...
-├── src/
-│   ├── components/
-│   ├── App.js
-│   ├── index.js
-│   └── ...
-├── .gitignore
-├── package.json
-└── README.md
-
-public/: Static files.
-src/: Main source code for the application.
-components/: Reusable UI components.
-pages/: Different pages of the portfolio.
-App.js: Root component.
-index.js: Entry point of the application.
-
-
-### Contact
-
-If you have any questions or suggestions, feel free to contact me:
-
-Email: tom@ethernordic.com
+Thank you for visiting my portfolio. Your feedback is always appreciated! 😊
