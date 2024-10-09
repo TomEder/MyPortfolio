@@ -3,6 +3,7 @@ import "./Projects.css";
 import BiozoneImg from "../../Images/BioZone.jpg";
 import FTTLanding from "../../Images/FTTLanding.png";
 import VectorBG from "../../Images/VectorBG.png";
+import WeatherApp from "../../Images/WeatherApp.png";
 
 const projectData = [
   {
@@ -28,7 +29,7 @@ const projectData = [
   },
   {
     title: "WEATHER APP",
-    image: "https://via.placeholder.com/300",
+    image: WeatherApp,
     description:
       "I developed a weather app that displays the current weather and forecast for a user's location. The app uses the OpenWeatherMap API to fetch weather data and displays it in a clean, user-friendly interface.",
     tech: ["React", "OpenWeatherMap API", "Tailwind CSS"],
