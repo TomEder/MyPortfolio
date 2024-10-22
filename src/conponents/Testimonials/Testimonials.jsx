@@ -24,6 +24,12 @@ const testimonials = [
     quote:
       "Tom created my website. He is quick and thorough. I am very happy with the result.",
   },
+  {
+    name: "EMMA",
+    role: "IT Manager at Tele2",
+    quote:
+      "Tom has been an intern in my department for five months. During this time, he has become a part of the team and created value. He has easy to learn and is both humble and curious, he has a great personality. ",
+  },
 ];
 
 const Testimonials = () => {
@@ -71,9 +77,9 @@ const Testimonials = () => {
       }}
     >
       <h2 className="text-4xl font-bold mb-20 mt-20 text-[#8A8A8A] text-center">
-        What Other People Say
+        WHAT OTHER PEOPLE SAY
       </h2>
-      <div className="w-full md:w-3/4 lg:w-1/2">
+      <div className="w-full p-20">
         <Slider {...settings} className="custom-dots">
           {testimonials.map((testimonial, index) => (
             <div

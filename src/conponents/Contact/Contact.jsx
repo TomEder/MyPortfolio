@@ -27,7 +27,7 @@ function Contact() {
             <path d="M21 8.29l-9 9-4.5-4.5 1.41-1.41L12 14.17l7.59-7.59z" />
           </svg>
           <div>
-            <h3 className="text-xl font-bold">Have a question?</h3>
+            <h3 className="text-xl font-bold">HAVE A QUESTION?</h3>
             <p>I am here to help you</p>
             <a href="mailto:tom@ethersteelsoft.com" className="text-[#D35400]">
               Email Me At tom@ethersteelsoft.com
@@ -43,7 +43,7 @@ function Contact() {
             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5z" />
           </svg>
           <div>
-            <h3 className="text-xl font-bold">Current Location</h3>
+            <h3 className="text-xl font-bold">CURRENT LOCATION</h3>
             <p>Stockholm, Sweden</p>
             <p className="text-[#D35400]">Serving Clients Worldwide</p>
           </div>
@@ -63,7 +63,7 @@ function Contact() {
               className="block text-[#D35400] text-lg font-bold mb-2"
               htmlFor="name"
             >
-              Name
+              NAME
             </label>
             <input
               className="w-full p-3 rounded bg-[#383838] text-[#8A8A8A] border border-[#D35400] focus:outline-none focus:border-[#b84400]"
@@ -81,7 +81,7 @@ function Contact() {
               className="block text-[#D35400] text-lg font-bold mb-2"
               htmlFor="email"
             >
-              Email
+              EMAIL
             </label>
             <input
               className="w-full p-3 rounded bg-[#383838] text-[#8A8A8A] border border-[#D35400] focus:outline-none focus:border-[#b84400]"
@@ -99,7 +99,7 @@ function Contact() {
               className="block text-[#D35400] text-lg font-bold mb-2"
               htmlFor="message"
             >
-              Message
+              MESSAGE
             </label>
             <textarea
               className="w-full p-3 rounded bg-[#383838] text-[#8A8A8A] border border-[#D35400] focus:outline-none focus:border-[#b84400]"

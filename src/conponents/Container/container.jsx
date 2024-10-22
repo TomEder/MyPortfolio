@@ -33,7 +33,7 @@ const About = () => {
             offset={-70}
             duration={500}
           >
-            Contact me!
+            CONTACT ME!
           </Link>
         </button>
       </div>
