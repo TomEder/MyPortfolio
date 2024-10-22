@@ -79,7 +79,7 @@ const Testimonials = () => {
       <h2 className="text-4xl font-bold mb-20 mt-20 text-[#8A8A8A] text-center">
         WHAT OTHER PEOPLE SAY
       </h2>
-      <div className="w-full p-20">
+      <div className="w-full p-4 md:p-20">
         <Slider {...settings} className="custom-dots">
           {testimonials.map((testimonial, index) => (
             <div
@@ -94,7 +94,7 @@ const Testimonials = () => {
                   <h4 className="text-sm text-[#8A8A8A] mb-4">
                     {testimonial.role}
                   </h4>
-                  <div className="my-5 text-[#8A8A8A]">
+                  <div className="my-1 text-[#8A8A8A]">
                     <p className="md:text-lg text-sm">"{testimonial.quote}"</p>
                   </div>
                 </div>
