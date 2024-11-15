@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import "./Landing.css"; // Custom CSS if needed
 import landingBackground from "../../Images/LandingBackground.jpg";
@@ -6,10 +6,22 @@ import Logo from "../../Images/Logo.png";
 import Name from "../../Images/Name.png";
 
 const Landing = () => {
+  const [backgroundLoaded, setBackgroundLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = landingBackground;
+    img.onload = () => setBackgroundLoaded(true);
+  }, []);
+
   return (
     <div
       className="h-screen bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center text-center p-5 md:p-10"
-      style={{ backgroundImage: `url(${landingBackground})` }}
+      style={{
+        backgroundImage: backgroundLoaded
+          ? `url(${landingBackground})`
+          : "none",
+      }}
     >
       <div
         className="relative"
