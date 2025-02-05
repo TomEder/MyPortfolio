@@ -1,19 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./Landing.css"; // Custom CSS if needed
-import landingBackground from "../../Images/LandingBackground.jpg";
 import Logo from "../../Images/Logo.png";
 import Jag4 from "../../Images/Jag4.png";
 import { Link } from "react-scroll";
 
 const Landing = () => {
-  const [backgroundLoaded, setBackgroundLoaded] = useState(false);
-
-  useEffect(() => {
-    const img = new Image();
-    img.src = landingBackground;
-    img.onload = () => setBackgroundLoaded(true);
-  }, []);
-
   return (
     <div className="h-screen bg-[#fbfdf2] flex items-center justify-between px-8 md:px-16 lg:px-32">
       {/* Left Section: Text and Logo */}

@@ -1,8 +1,4 @@
 import React from "react";
-import Jag from "../../Images/Jag4.png";
-import { Link } from "react-scroll";
-
-const jagimg = Jag;
 
 const About = () => {
   return (
