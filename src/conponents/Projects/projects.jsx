@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import "./Projects.css";
 import BiozoneImg from "../../Images/BioZone.jpg";
 import FTTLanding from "../../Images/FTTLanding.png";
-import VectorBG from "../../Images/VectorBG.png";
 import WeatherApp from "../../Images/WeatherApp.png";
 
 const projectData = [
@@ -13,13 +11,6 @@ const projectData = [
       "Used Wordpress to build a modern website for Biozone. This project involved redesigning the website to improve user experience and SEO.",
     tech: ["Wordpress", "JavaScript", "SEO"],
   },
-  /*  {
-    title: "MEDEXA CONFIG EDITOR WEB APP",
-    image: MedexaImg,
-    description:
-      "I independently developed a web application from concept to finished product according to the client's requirements, focusing on designing and implementing with ASP.NET Core and AngularJS. The application generates configuration files and allows XML uploads, streamlining the client's workflow and reducing errors in configuration management.",
-    tech: ["Angular", ".NET", "C#", "Tailwind CSS"],
-  }, */
   {
     title: "FREELANCE TIME TRACKER APP",
     image: FTTLanding,
@@ -34,13 +25,6 @@ const projectData = [
       "I developed a weather app that displays the current weather and forecast for a user's location. The app uses the OpenWeatherMap API to fetch weather data and displays it in a clean, user-friendly interface.",
     tech: ["React", "OpenWeatherMap API", "Tailwind CSS"],
   },
-  /* {
-    title: "Labelle studio website",
-    image: LabelleLanding,
-    description:
-      "I designed and developed a website for a local hair salon. The website showcases the studio's portfolio and services, and includes a contact form for potential clients to reach out.",
-    tech: ["React", "Tailwind CSS", "Instagram API", "Figma"],
-  }, */
 ];
 
 const Projects = () => {
@@ -51,28 +35,21 @@ const Projects = () => {
   };
 
   return (
-    <div
-      className="projects-section bg-[#181818] min-h-screen p-10 flex flex-col items-center"
-      style={{
-        backgroundImage: `url(${VectorBG})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <h1 className="text-4xl md:mb-72 mt-20 text-[#8A8A8A] text-center">
+    <div className="w-screen min-h-screen bg-[#999999] flex flex-col items-center px-10 py-20">
+      <h1 className="text-4xl md:text-5xl font-extrabold text-[#313433] mb-12 text-center">
         MY LATEST WORK
       </h1>
-      <div className="projects-grid md:p-20 mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 items-center justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
         {projectData.map((project, index) => (
           <div
             key={index}
-            className="project-card border-2 border-[#282828] p-6 bg-[#282828] rounded-lg shadow-lg cursor-pointer transition-transform duration-300 ease-in-out hover:border-[#D35400] hover:scale-105"
+            className="project-card bg-white border border-gray-300 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow cursor-pointer"
             onClick={() => setSelectedProject(project)}
           >
-            <h2 className="text-2xl font-semibold mb-4 text-[#8A8A8A]">
+            <h2 className="text-xl font-semibold text-[#313433] mb-4">
               {project.title}
             </h2>
-            <p className="text-[#8A8A8A]">
+            <p className="text-[#6c6c6c]">
               {project.description.substring(0, 100) + "..."}
             </p>
           </div>
@@ -81,18 +58,18 @@ const Projects = () => {
 
       {selectedProject && (
         <div
-          className="modal fixed inset-0 max-h-screen bg-black bg-opacity-70 flex items-center justify-center"
+          className="modal fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center"
           onClick={handleCloseModal}
         >
           <div
-            className="modal-content bg-[#282828] py-12 px-4 rounded-lg max-w-3xl w-full"
+            className="modal-content bg-white py-10 px-6 rounded-lg max-w-3xl w-full"
             onClick={(e) => e.stopPropagation()}
           >
-            <h2 className="text-3xl font-semibold text-[#D35400] mb-4">
+            <h2 className="text-2xl font-bold text-[#313433] mb-4">
               {selectedProject.title}
             </h2>
             <img
-              className="m-auto max-h-96"
+              className="m-auto max-h-96 rounded-lg shadow-lg"
               src={selectedProject.image}
               alt="Project"
             />
@@ -101,17 +78,17 @@ const Projects = () => {
                 {selectedProject.tech.map((tech, index) => (
                   <span
                     key={index}
-                    className="text-[#8A8A8A] rounded-full border-2 border-[#D35400] px-2 py-1 text-sm mr-2"
+                    className="text-[#313433] border border-gray-300 bg-gray-100 px-2 py-1 rounded-full text-sm mr-2 mb-2"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
             )}
-            <p className="text-[#8A8A8A] mb-4">{selectedProject.description}</p>
+            <p className="text-[#6c6c6c] mt-4">{selectedProject.description}</p>
             <button
               onClick={handleCloseModal}
-              className="bg-[#D35400] text-white px-4 py-2 rounded hover:bg-[#b84400]"
+              className="mt-6 bg-[#313433] text-white px-4 py-2 rounded hover:bg-gray-800 transition"
             >
               Close
             </button>

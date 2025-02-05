@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
 import "./Landing.css"; // Custom CSS if needed
 import landingBackground from "../../Images/LandingBackground.jpg";
 import Logo from "../../Images/Logo.png";
-import Name from "../../Images/Name.png";
+import Jag4 from "../../Images/Jag4.png";
+import { Link } from "react-scroll";
 
 const Landing = () => {
   const [backgroundLoaded, setBackgroundLoaded] = useState(false);
@@ -15,74 +15,36 @@ const Landing = () => {
   }, []);
 
   return (
-    <div
-      className="h-screen bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center text-center p-5 md:p-10"
-      style={{
-        backgroundImage: backgroundLoaded
-          ? `url(${landingBackground})`
-          : "none",
-      }}
-    >
-      <div
-        className="relative"
-        style={{ position: "absolute", top: "15%", left: "10%" }}
-      >
-        <div className="flex flex-col items-center">
-          <img src={Logo} alt="Logo" className="w-[300px] md:w-[600px]" />
-          <img
-            src={Name}
-            alt="Name"
-            className="w-[150px] ml-10 md:w-[220px] md:ml-64"
-          />
-        </div>
-        <div className="mt-10 flex flex-col items-center gap-4 md:grid md:grid-cols-3 md:gap-6">
-          <div className="col-span-3 flex justify-center mb-4"></div>
-          <Link
-            to="container"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="buttonStyle"
-          >
-            ABOUT
-          </Link>
-          <Link
-            to="projects"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="buttonStyle"
-          >
-            PORTFOLIO
-          </Link>
-          <Link
-            to="services"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="buttonStyle"
-          >
-            SERVICES
-          </Link>
-          <Link
-            to="testimonials"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="buttonStyle"
-          >
-            TESTIMONIALS
-          </Link>
+    <div className="h-screen bg-[#fbfdf2] flex items-center justify-between px-8 md:px-16 lg:px-32">
+      {/* Left Section: Text and Logo */}
+      <div className="flex flex-col justify-center max-w-lg space-y-4">
+        <img src={Logo} alt="Logo" className="w-40 md:w-48" />
+        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight">
+          I'M TOM EDERSTÅL, AT YOUR SERVICE!
+        </h2>
+        <p className="text-lg md:text-xl text-gray-600">
+          READY TO HELP WITH WEB DEVELOPMENT & SOCIAL MEDIA MANAGEMENT
+        </p>
+        <button className="mt-4 px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">
           <Link
             to="contact"
             spy={true}
             smooth={true}
+            offset={-70}
             duration={500}
-            className="buttonStyle"
           >
-            CONTACT
+            CONTACT ME!
           </Link>
-        </div>
+        </button>
+      </div>
+
+      {/* Right Section: Image */}
+      <div className="w-[250px] md:w-[300px] lg:w-[350px] rounded-lg overflow-hidden flex-shrink-0">
+        <img
+          src={Jag4}
+          alt="Tom Ederstål"
+          className="w-full h-auto object-cover"
+        />
       </div>
     </div>
   );

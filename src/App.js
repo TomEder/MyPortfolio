@@ -16,11 +16,11 @@ export default function App() {
       <div id="container">
         <Container />
       </div>
-      <div id="projects">
-        <Projects />
-      </div>
       <div id="services">
         <Services />
+      </div>
+      <div id="projects">
+        <Projects />
       </div>
       <div id="testimonials">
         <Testimonials />

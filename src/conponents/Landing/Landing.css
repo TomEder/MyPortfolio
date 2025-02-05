@@ -13,3 +13,21 @@
       hover:text-white 
       transition-all;
 }
+
+.presentation {
+  @apply text-[#313433] 
+      text-4xl 
+      font-bold 
+      text-center 
+      mt-4 
+      md:text-3xl;
+}
+
+.LogoSize {
+  @apply w-32 
+      h-10 
+      md:w-64 
+      md:h-16
+      sm:w-48
+      sm:h-16;
+}

@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import "./Contact.css";
-import VectorBG from "../../Images/VectorBG.png";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -8,19 +6,12 @@ function Contact() {
   const [message, setMessage] = useState("");
 
   return (
-    <div
-      className="contact-section bg-[#181818] min-h-screen p-10 flex flex-col lg:flex-row items-center justify-around"
-      style={{
-        backgroundImage: `url(${VectorBG})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
+    <div className="contact-section bg-[#f9f9f9] min-h-screen p-10 flex flex-col lg:flex-row items-center justify-around">
       {/* Contact Information Section */}
-      <div className="flex flex-col items-start text-center md:text-left mb-8 md:mb-0 w-full md:w-1/2 text-[#8A8A8A]">
+      <div className="flex flex-col items-start text-center md:text-left mb-8 md:mb-0 w-full md:w-1/2 text-[#313433]">
         <div className="flex items-center mb-6 justify-center md:justify-start">
           <svg
-            className="w-6 h-6 mr-2 text-[#D35400]"
+            className="w-6 h-6 mr-2 text-[#313433]"
             fill="currentColor"
             viewBox="0 0 24 24"
           >
@@ -29,14 +20,17 @@ function Contact() {
           <div>
             <h3 className="text-xl font-bold">HAVE A QUESTION?</h3>
             <p>I am here to help you</p>
-            <a href="mailto:tom@ethersteelsoft.com" className="text-[#D35400]">
+            <a
+              href="mailto:tom@ethersteelsoft.com"
+              className="text-[#007bff] underline"
+            >
               Email Me At tom@ethersteelsoft.com
             </a>
           </div>
         </div>
         <div className="flex items-center justify-center md:justify-start">
           <svg
-            className="w-6 h-6 mr-2 text-[#D35400]"
+            className="w-6 h-6 mr-2 text-[#313433]"
             fill="currentColor"
             viewBox="0 0 24 24"
           >
@@ -45,7 +39,7 @@ function Contact() {
           <div>
             <h3 className="text-xl font-bold">CURRENT LOCATION</h3>
             <p>Stockholm, Sweden</p>
-            <p className="text-[#D35400]">Serving Clients Worldwide</p>
+            <p className="text-[#007bff]">Serving Clients Worldwide</p>
           </div>
         </div>
       </div>
@@ -55,18 +49,18 @@ function Contact() {
         <form
           name="contact"
           method="POST"
-          className="w-full max-w-lg bg-[#282828] p-8 rounded-lg shadow-md"
+          className="w-full max-w-lg bg-white p-8 rounded-lg shadow-md border border-gray-300"
         >
           <input type="hidden" name="form-name" value="contact" />
           <div className="mb-6">
             <label
-              className="block text-[#D35400] text-lg font-bold mb-2"
+              className="block text-[#313433] text-lg font-bold mb-2"
               htmlFor="name"
             >
               NAME
             </label>
             <input
-              className="w-full p-3 rounded bg-[#383838] text-[#8A8A8A] border border-[#D35400] focus:outline-none focus:border-[#b84400]"
+              className="w-full p-3 rounded bg-gray-100 text-[#313433] border border-gray-300 focus:outline-none focus:border-[#007bff]"
               type="text"
               id="name"
               name="name"
@@ -78,13 +72,13 @@ function Contact() {
           </div>
           <div className="mb-6">
             <label
-              className="block text-[#D35400] text-lg font-bold mb-2"
+              className="block text-[#313433] text-lg font-bold mb-2"
               htmlFor="email"
             >
               EMAIL
             </label>
             <input
-              className="w-full p-3 rounded bg-[#383838] text-[#8A8A8A] border border-[#D35400] focus:outline-none focus:border-[#b84400]"
+              className="w-full p-3 rounded bg-gray-100 text-[#313433] border border-gray-300 focus:outline-none focus:border-[#007bff]"
               type="email"
               id="email"
               name="email"
@@ -96,13 +90,13 @@ function Contact() {
           </div>
           <div className="mb-6">
             <label
-              className="block text-[#D35400] text-lg font-bold mb-2"
+              className="block text-[#313433] text-lg font-bold mb-2"
               htmlFor="message"
             >
               MESSAGE
             </label>
             <textarea
-              className="w-full p-3 rounded bg-[#383838] text-[#8A8A8A] border border-[#D35400] focus:outline-none focus:border-[#b84400]"
+              className="w-full p-3 rounded bg-gray-100 text-[#313433] border border-gray-300 focus:outline-none focus:border-[#007bff]"
               name="message"
               id="message"
               placeholder="Your Message"
@@ -114,7 +108,7 @@ function Contact() {
           </div>
           <button
             type="submit"
-            className="w-full md:w-1/2 bg-[#D35400] hover:bg-[#b84400] text-white p-3 rounded-lg transition-colors"
+            className="w-full md:w-1/2 bg-[#007bff] hover:bg-[#0056b3] text-white p-3 rounded-lg transition-colors"
           >
             Send
           </button>
