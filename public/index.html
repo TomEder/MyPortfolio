@@ -10,34 +10,40 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>Tom Ederstål | EtherSteel Software</title>
+
+    <!-- Metricool script placed inside the <head> -->
+    <script>
+      function loadScript(callback) {
+        var headEl = document.getElementsByTagName("head")[0];
+        var scriptEl = document.createElement("script");
+        scriptEl.type = "text/javascript";
+        scriptEl.src = "https://tracker.metricool.com/resources/be.js";
+        scriptEl.onreadystatechange = callback;
+        scriptEl.onload = callback;
+        headEl.appendChild(scriptEl);
+      }
+      loadScript(function () {
+        beTracker.t({ hash: "f7a081da434d9320e84870e69497582f" });
+      });
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+    <!-- Hidden Netlify form -->
     <form name="contact" data-netlify="true" hidden>
       <div>
-        <input type="text" id="name" name="name">
+        <input type="text" id="name" name="name" />
       </div>
       <div>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" />
       </div>
       <div>
         <textarea id="message" name="message"></textarea>
+      </div>
     </form>
   </body>
 </html>
