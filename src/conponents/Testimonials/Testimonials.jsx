@@ -6,27 +6,27 @@ import "slick-carousel/slick/slick-theme.css";
 const testimonials = [
   {
     name: "HRODVAR",
-    role: "Development manager",
+    role: "Utvecklingschef",
     quote:
       "It has been educational and rewarding to have Tom in our development team. Tom has been a part of our development team during the years 2023 and 2024. His task has been to design and develop a new config editor. Tom is a kind, driven, and ambitious developer.",
   },
   {
     name: "NABIL",
-    role: "Fullstack Developer",
+    role: "Fullstack-utvecklare",
     quote:
       "Tom is an outstanding developer who thrives on challenges. His ability to tackle complex problems and find effective solutions is truly impressive. He is a valuable asset to any team, and his enthusiasm and expertise inspire everyone around him. I highly recommend Tom for any project or team looking for a dedicated and skilled developer.",
   },
   {
     name: "VICTOR",
-    role: "Multimedia producer",
+    role: "Multimediaproducent",
     quote:
       "Tom created my website. He is quick and thorough. I am very happy with the result.",
   },
   {
     name: "EMMA",
-    role: "IT Manager at Tele2",
+    role: "IT-chef på Tele2",
     quote:
-      "Tom has been an intern in my department for five months. During this time, he has become a part of the team and created value. He has easy to learn and is both humble and curious, he has a great personality. ",
+      "Tom has been an intern in my department for five months. During this time, he has become a part of the team and created value. He has easy to learn and is both humble and curious, he has a great personality.",
   },
 ];
 
@@ -68,7 +68,7 @@ const Testimonials = () => {
   return (
     <div className="testimonials-section bg-[#f9f9f9] min-h-screen p-10 flex flex-col items-center">
       <h2 className="text-4xl md:text-5xl font-extrabold text-[#313433] mb-12 text-center">
-        WHAT OTHER PEOPLE SAY
+        VAD ANDRA SÄGER
       </h2>
       <div className="w-full p-4 md:p-20">
         <Slider {...settings} className="custom-dots">

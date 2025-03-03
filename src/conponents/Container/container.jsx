@@ -5,19 +5,20 @@ const About = () => {
     <div className="w-screen h-screen bg-[#999999] flex items-center justify-center">
       <div className="text-center px-5">
         <p className="text-sm md:text-base font-medium text-[#313433] mb-4">
-          Why me?
+          Varför välja mig?
         </p>
-        <h1 className="text-3xl md:text-6xl font-extrabold text-[#313433] mb-6">
-          I'M VERY QUALIFIED TO HELP!
+        <h1 className="text-3xl md:text-4xl font-extrabold text-[#313433] mb-6">
+          JAG ÄR MYCKET KVALIFICERAD ATT HJÄLPA DIG!
         </h1>
         <p className="text-sm md:text-lg mx-auto max-w-3xl text-[#313433] leading-relaxed">
-          With a two-year KYH diploma in frontend development and expertise in
-          UX/UI design, I’ve developed web applications using React, Angular,
-          TypeScript, and .NET at companies like Great-IT and Medexa Diagnostisk
-          Service AB. I’m also passionate about social media, combining
-          technical skills with creative storytelling to manage platforms and
-          drive engagement. Known for my proactive mindset and teamwork, I stay
-          ahead of trends in both web development and social media.
+          Med en tvåårig KYH-examen i frontend-utveckling och expertis inom
+          UX/UI-design har jag utvecklat webbapplikationer med React, Angular,
+          TypeScript och .NET på företag som Great-IT och Medexa Diagnostisk
+          Service AB. Jag är också passionerad för sociala medier och kombinerar
+          tekniska färdigheter med kreativt berättande för att hantera
+          plattformar och driva engagemang. Känd för mitt proaktiva tänkesätt
+          och lagarbete, håller jag mig uppdaterad med trender inom både
+          webbutveckling och sociala medier.
         </p>
       </div>
     </div>

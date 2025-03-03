@@ -7,7 +7,7 @@ function Contact() {
 
   return (
     <div className="contact-section bg-[#f9f9f9] min-h-screen p-10 flex flex-col lg:flex-row items-center justify-around">
-      {/* Contact Information Section */}
+      {/* Kontaktinformation */}
       <div className="flex flex-col items-start text-center md:text-left mb-8 md:mb-0 w-full md:w-1/2 text-[#313433]">
         <div className="flex items-center mb-6 justify-center md:justify-start">
           <svg
@@ -18,13 +18,13 @@ function Contact() {
             <path d="M21 8.29l-9 9-4.5-4.5 1.41-1.41L12 14.17l7.59-7.59z" />
           </svg>
           <div>
-            <h3 className="text-xl font-bold">HAVE A QUESTION?</h3>
-            <p>I am here to help you</p>
+            <h3 className="text-xl font-bold">HAR DU EN FRÅGA?</h3>
+            <p>Jag hjälper gärna till!</p>
             <a
               href="mailto:tom@ethersteelsoft.com"
               className="text-[#007bff] underline"
             >
-              Email Me At tom@ethersteelsoft.com
+              Mejla mig på tom@ethersteelsoft.com
             </a>
           </div>
         </div>
@@ -37,14 +37,14 @@ function Contact() {
             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5z" />
           </svg>
           <div>
-            <h3 className="text-xl font-bold">CURRENT LOCATION</h3>
-            <p>Stockholm, Sweden</p>
-            <p className="text-[#007bff]">Serving Clients Worldwide</p>
+            <h3 className="text-xl font-bold">NUVARANDE PLATS</h3>
+            <p>Åkersberga, Sverige</p>
+            <p className="text-[#007bff]">Tjänar kunder över hela världen</p>
           </div>
         </div>
       </div>
 
-      {/* Contact Form Section */}
+      {/* Kontaktformulär */}
       <div className="w-full lg:w-1/2 p-4 md:p-8">
         <form
           name="contact"
@@ -57,14 +57,14 @@ function Contact() {
               className="block text-[#313433] text-lg font-bold mb-2"
               htmlFor="name"
             >
-              NAME
+              NAMN
             </label>
             <input
               className="w-full p-3 rounded bg-gray-100 text-[#313433] border border-gray-300 focus:outline-none focus:border-[#007bff]"
               type="text"
               id="name"
               name="name"
-              placeholder="Your name"
+              placeholder="Ditt namn"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
@@ -75,14 +75,14 @@ function Contact() {
               className="block text-[#313433] text-lg font-bold mb-2"
               htmlFor="email"
             >
-              EMAIL
+              E-POST
             </label>
             <input
               className="w-full p-3 rounded bg-gray-100 text-[#313433] border border-gray-300 focus:outline-none focus:border-[#007bff]"
               type="email"
               id="email"
               name="email"
-              placeholder="Your Email"
+              placeholder="Din e-post"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -93,13 +93,13 @@ function Contact() {
               className="block text-[#313433] text-lg font-bold mb-2"
               htmlFor="message"
             >
-              MESSAGE
+              MEDDELANDE
             </label>
             <textarea
               className="w-full p-3 rounded bg-gray-100 text-[#313433] border border-gray-300 focus:outline-none focus:border-[#007bff]"
               name="message"
               id="message"
-              placeholder="Your Message"
+              placeholder="Ditt meddelande"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               rows="5"
@@ -110,7 +110,7 @@ function Contact() {
             type="submit"
             className="w-full md:w-1/2 bg-[#007bff] hover:bg-[#0056b3] text-white p-3 rounded-lg transition-colors"
           >
-            Send
+            Skicka
           </button>
         </form>
       </div>

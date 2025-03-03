@@ -5,24 +5,24 @@ import WeatherApp from "../../Images/WeatherApp.png";
 
 const projectData = [
   {
-    title: "BIOZONE WEBSITE REDESIGN",
+    title: "BIOZONE WEBBPLATS REDESIGN",
     image: BiozoneImg,
     description:
-      "Used Wordpress to build a modern website for Biozone. This project involved redesigning the website to improve user experience and SEO.",
+      "Använde Wordpress för att bygga en modern webbplats för Biozone. Detta projekt innebar att designa om webbplatsen för att förbättra användarupplevelsen och SEO.",
     tech: ["Wordpress", "JavaScript", "SEO"],
   },
   {
     title: "FREELANCE TIME TRACKER APP",
     image: FTTLanding,
     description:
-      "I am developing an app that helps hourly employees easily keep track of hours worked and money earned for different projects. The user creates a project, sets an hourly rate, and starts a timer for each work session. When the timer is stopped, the app automatically calculates the earnings and adds it to the total for the billing period.",
+      "Jag utvecklar en app som hjälper frilansare att enkelt hålla koll på arbetade timmar och intjänade pengar för olika projekt. Användaren skapar ett projekt, ställer in en timtaxa och startar en timer för varje arbetspass. När timern stoppas beräknar appen automatiskt intäkterna och lägger till dem till totalen för faktureringsperioden.",
     tech: ["React", "Tailwind CSS", "Firebase"],
   },
   {
-    title: "WEATHER APP",
+    title: "VÄDERAPP",
     image: WeatherApp,
     description:
-      "I developed a weather app that displays the current weather and forecast for a user's location. The app uses the OpenWeatherMap API to fetch weather data and displays it in a clean, user-friendly interface.",
+      "Jag utvecklade en väderapp som visar aktuellt väder och prognos för användarens plats. Appen använder OpenWeatherMap API för att hämta väderdata och visar det i ett rent, användarvänligt gränssnitt.",
     tech: ["React", "OpenWeatherMap API", "Tailwind CSS"],
   },
 ];
@@ -37,7 +37,7 @@ const Projects = () => {
   return (
     <div className="w-screen min-h-screen bg-[#999999] flex flex-col items-center px-10 py-20">
       <h1 className="text-4xl md:text-5xl font-extrabold text-[#313433] mb-12 text-center">
-        MY LATEST WORK
+        MINA SENASTE PROJEKT
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
         {projectData.map((project, index) => (
@@ -71,7 +71,7 @@ const Projects = () => {
             <img
               className="m-auto max-h-96 rounded-lg shadow-lg"
               src={selectedProject.image}
-              alt="Project"
+              alt={selectedProject.title}
             />
             {selectedProject.tech && (
               <div className="flex flex-wrap mt-4">
@@ -90,7 +90,7 @@ const Projects = () => {
               onClick={handleCloseModal}
               className="mt-6 bg-[#313433] text-white px-4 py-2 rounded hover:bg-gray-800 transition"
             >
-              Close
+              Stäng
             </button>
           </div>
         </div>
